@@ -48,10 +48,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   Landing page (mobile)
   
-  <img src="readme-images/landingpage_dopper_mobile1.png" width="375px" alt="landingpage">
-  <img src="readme-images/landingpage_dopper_mobile2.png" width="375px" alt="landingpage">
-  <img src="readme-images/landingpage_dopper_mobile3.png" width="375px" alt="landingpage">
-  <img src="readme-images/landingpage_dopper_mobile4.png" width="375px" alt="landingpage">
+  <img src="readme-images/landingpage_dopper_mobile1.png" alt="landingpage">
+  <img src="readme-images/landingpage_dopper_mobile2.png" alt="landingpage">
+  <img src="readme-images/landingpage_dopper_mobile3.png" alt="landingpage">
+  <img src="readme-images/landingpage_dopper_mobile4.png" alt="landingpage">
 
 
   #### Screenshot(s) van de tweede pagina (small screen):
@@ -61,7 +61,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   Shop page (mobile)
   
-  <img src="readme-images/shop_dopper_mobile1.png" width="375px" alt="shoppage">
+  <img src="readme-images/shop_dopper_mobile1.png" alt="shoppage">
  
 </details>
 
