@@ -40,9 +40,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://dopper.com/nl
   #### Screenshot(s) van de eerste pagina (small screen): 
   Landing page (laptop)
-  <img src="readme-images/landingpage_dopper1.png" width="375px" alt="landingpage">
-  <img src="readme-images/landingpage_dopper2.png" width="375px" alt="landingpage">
-  <img src="readme-images/landingpage_dopper3.png" width="375px" alt="landingpage">
+  <img src="readme-images/landingpage_dopper1.png" alt="landingpage">
+  <img src="readme-images/landingpage_dopper2.png" alt="landingpage">
+  <img src="readme-images/landingpage_dopper3.png" alt="landingpage">
   
   Landing page (mobile)
   <img src="readme-images/landingpage_dopper_mobile1.png" width="375px" alt="landingpage">
