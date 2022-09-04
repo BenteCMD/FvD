@@ -48,7 +48,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   Landing page (mobile)
   
-  <img src="readme-images/landingpage_dopper_mobile1.png" alt="landingpage">
+  <img src="readme-images/landingpage_dopper_mobile1.png" height: "375px" alt="landingpage">
   <img src="readme-images/landingpage_dopper_mobile2.png" alt="landingpage">
   <img src="readme-images/landingpage_dopper_mobile3.png" alt="landingpage">
   <img src="readme-images/landingpage_dopper_mobile4.png" alt="landingpage">
