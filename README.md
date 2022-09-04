@@ -34,18 +34,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Je website
 
 <details open>
-  <summary>uitwerken voor kick-off werkgroep</summary>
+  <summary>Ik ga de website van Dopper namaken. Dopper is een Nederlands bedrijf dat plastic hervulbare waterflessen verkoopt, om het gebruik van plastic wegwerpflesjes tegen te gaan.</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+ https://dopper.com/nl
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Landing page
+  <img src="readme-images/landingpage_dopper1.png" width="375px" alt="landing page">
+  <img src="readme-images/landingpage_dopper2.png" width="375px" alt="landing page">
+  <img src="readme-images/landingpage_dopper3.png" width="375px" alt="landing page">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Shopping page
+  <img src="readme-images/shop_dopper1.png" width="375px" alt="landing page">
+  
  
 </details>
 
