@@ -34,18 +34,29 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Je website
 
 <details open>
-  <summary>uitwerken voor kick-off werkgroep</summary>
+  <summary>Ik ga de website van Dopper namaken. Dopper is een Nederlands bedrijf dat het gebruik van plastic wegwerpflesjes tegengaat door plastic hervulbare waterflessen te verkopen.</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
-
+  https://dopper.com/nl
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Landing page (laptop)
+  <img src="readme-images/landingpage_dopper1.png" width="375px" alt="landingpage">
+  <img src="readme-images/landingpage_dopper2.png" width="375px" alt="landingpage">
+  <img src="readme-images/landingpage_dopper3.png" width="375px" alt="landingpage">
+  
+  Landing page (mobile)
+  <img src="readme-images/landingpage_dopper_mobile1.png" width="375px" alt="landingpage">
+  <img src="readme-images/landingpage_dopper_mobile2.png" width="375px" alt="landingpage">
+  <img src="readme-images/landingpage_dopper_mobile3.png" width="375px" alt="landingpage">
+  <img src="readme-images/landingpage_dopper_mobile4.png" width="375px" alt="landingpage">
+
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Shop page (laptop)
+  <img src="readme-images/shop_dopper1.png" width="375px" alt="shoppage">
+  
+  Shop page (mobile)
+  <img src="readme-images/shop_dopper_mobile1.png" width="375px" alt="shoppage">
  
 </details>
 
