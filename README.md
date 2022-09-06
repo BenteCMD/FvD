@@ -64,8 +64,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/shop_dopper1.png" width="375px" alt="shoppage">
   
   Footer
+  
   <img src="readme-images/footer_dopper_mobile.jpeg" width="156px" height="321px" alt="footer">
-   <img src="readme-images/footer_dopper.png" width="375px" alt="footer">
+  <img src="readme-images/footer_dopper.png" width="375px" alt="footer">
   
  
 </details>
