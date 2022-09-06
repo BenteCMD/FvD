@@ -57,7 +57,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Screenshot(s) van de tweede pagina (small screen):
     Shop page (mobile)
   
-  <img src="readme-images/shop_dopper_mobile1.jpeg" alt="shoppage-mobile">
+  <img src="readme-images/shop_dopper_mobile1.jpeg" width="375px alt="shoppage-mobile">
   
   Shop page (laptop)
   
