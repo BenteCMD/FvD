@@ -42,10 +42,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Screenshot(s) van de eerste pagina (small screen): 
   Landing page (mobile)
   
-  <img src="readme-images/landingpage_dopper_mobile1.jpeg" width="196px" height="403px" alt="landingpage-mobile">
-  <img src="readme-images/landingpage_dopper_mobile2.jpeg" alt="landingpage-mobile">
-  <img src="readme-images/landingpage_dopper_mobile3.jpeg" alt="landingpage-mobile">
-  <img src="readme-images/landingpage_dopper_mobile4.jpeg" alt="landingpage-mobile">
+  <img src="readme-images/landingpage_dopper_mobile1.jpeg" width="156px" height="321px" alt="landingpage-mobile">
+  <img src="readme-images/landingpage_dopper_mobile2.jpeg" width="156px" height="321px" alt="landingpage-mobile">
+  <img src="readme-images/landingpage_dopper_mobile3.jpeg" width="156px" height="321px" alt="landingpage-mobile">
+  <img src="readme-images/landingpage_dopper_mobile4.jpeg" width="156px" height="321px" alt="landingpage-mobile">
 
   Landing page (laptop)
   
@@ -57,7 +57,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Screenshot(s) van de tweede pagina (small screen):
     Shop page (mobile)
   
-  <img src="readme-images/shop_dopper_mobile1.jpeg" alt="shoppage-mobile">
+  <img src="readme-images/shop_dopper_mobile1.jpeg" width="156px" height="321px" alt="shoppage-mobile">
   
   Shop page (laptop)
   
