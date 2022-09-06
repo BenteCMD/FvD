@@ -40,28 +40,29 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://dopper.com/nl
   
   #### Screenshot(s) van de eerste pagina (small screen): 
+  Landing page (mobile)
+  
+  <img src="readme-images/landingpage_dopper_mobile1.jpeg" alt="landingpage-mobile">
+  <img src="readme-images/landingpage_dopper_mobile2.jpeg" alt="landingpage-mobile">
+  <img src="readme-images/landingpage_dopper_mobile3.jpeg" alt="landingpage-mobile">
+  <img src="readme-images/landingpage_dopper_mobile4.jpeg" alt="landingpage-mobile">
+
   Landing page (laptop)
   
   <img src="readme-images/landingpage_dopper1.png" width="375px" alt="landingpage">
   <img src="readme-images/landingpage_dopper2.png" width="375px" alt="landingpage">
   <img src="readme-images/landingpage_dopper3.png" width="375px" alt="landingpage">
   
-  Landing page (mobile)
-  
-  <img src="readme-images/landingpage_dopper_mobile1.png" alt="landingpage-mobile">
-  <img src="readme-images/landingpage_dopper_mobile2.png" alt="landingpage-mobile">
-  <img src="readme-images/landingpage_dopper_mobile3.png" alt="landingpage-mobile">
-  <img src="readme-images/landingpage_dopper_mobile4.png" alt="landingpage-mobile">
-
 
   #### Screenshot(s) van de tweede pagina (small screen):
+    Shop page (mobile)
+  
+  <img src="readme-images/shop_dopper_mobile1.jpeg" alt="shoppage-mobile">
+  
   Shop page (laptop)
   
   <img src="readme-images/shop_dopper1.png" width="375px" alt="shoppage">
   
-  Shop page (mobile)
-  
-  <img src="readme-images/shop_dopper_mobile1.png" alt="shoppage-mobile">
  
 </details>
 
