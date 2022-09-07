@@ -77,33 +77,57 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken na test in 1e werkgroep</summary>
-
+In de les heb ik de toegankelijkheid van de Dopper site getest d.m.v. mij in te leven in verschillende beperkingen.
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
+ Het was een vrij frustrerende ervaring om de screenreader te gebruiken. Een robotstem bleef maar alle inhoud op het scherm voorlezen, zonder dat ik er controle over had. Bij de Dopper site viel mij het volgende op:
+ - Je moest eerst door alle navigatie tabben, voordat je bij de inhoud van de pagina terecht kwam. Er waren geen shortcut links, waardoor het lang duurde om de eerste pagina te lezen.
+ - Tijdens het voorlezen van het submenu, hoorde ik alleen maar "koplink, koplink, koplink". De titel van de link werd niet genoemd.
+
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+- shortcut links toevoegen ("ga door naar inhoud")
+- kopjes goed coderen, altijd een duidelijke titel
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  Ik heb geprobeerd door de site te navigeren zonder mijn muis te gebruiken. 
+  - Erdoorheen tabben duurde lang; geen shortcuts, eerst door alle navigatielinks heen
+  - Niet duidelijk aangegeven welk element je op gefocust bent
+  - Wanneer je door het menu navigeert, blijft het submenu onzichtbaar
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+- shortcut link
+- duidelijke focus states
+- submenu in beeld brengen met focus ipv alleen hover
 
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  Ik had een shockapparaatje op mijn onderarm geplakt waardoor mijn arm ongecontroleerde bewegingen maakte.
+  - moeilijk om te typen
+  - moeilijk op de gewenste knop te drukken
+  
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+- knoppen groter, groter klikbaar veld
+- content ietsje dichterbij elkaar zodat je niet ver met je muis hoeft te reizen
+- makkelijker maken voor 1 hand bediening
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
-
+  Ik heb een bril opgedaan waardoor mijn zichtveld beperkt was tot slechts een klein gaatje (peripheral field loss).
+  - kan mijn eigen cursor niet meer zien
+  - tekst lezen is moeilijk, smalle stukken tekst is wat beter te doen
+  
+Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis) 
+- kleine letters moeilijk te lezen
+- kleurcontrast vermindert
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+- kleurcontrast omhoog
+- groot lettertype
 </details>
 
 
