@@ -138,7 +138,7 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown-homebreakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
@@ -159,7 +159,9 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  Het stylen van de elementen met CSS ging vrij goed. Het positioneren vond ik wel wat lastiger, ik neig vaak margins 
+  te gebruiken terwijl er betere oplossingen zijn. Ook de juiste semantiek van de HTML vond ik af en toe lastig, omdat dat
+  de CSS styling soms moeilijker maakte (vb: <.br> element fout gebruiken).
 
   ### Agenda voor meeting
   samen met je groepje opstellen
