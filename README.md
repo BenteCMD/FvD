@@ -158,11 +158,18 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
   Het stylen van de elementen met CSS ging vrij goed. Het positioneren vond ik wel wat lastiger, ik neig vaak margins 
-  te gebruiken terwijl er betere oplossingen zijn. Ook de juiste semantiek van de HTML vond ik af en toe lastig, omdat dat
-  de CSS styling soms moeilijker maakte (vb: <.br> element fout gebruiken).
+  te gebruiken terwijl er betere oplossingen zijn.
+  
+  Daarnaast vond ik het af en toe lastig de juiste semantiek van de HTML te gebruiken. Inmiddels weet ik nu wel het verschil
+  tussen sections en articles. Ook realiseer ik nu beter dat het van belang is om je HTML eerst goed op orde te hebben voordat
+  je aan de CSS styling begint, scheelt heel wat tijd..
+  
+  Ook heb ik geprobeerd mijn HTML toegankelijk te maken voor screen-readers. Dit gaf wel een uitdaging: ik wilde een hele article
+  klikbaar maken, zonder dat de screen-reader de hele <a> inhoud voor zou lezen. Inmiddels weet ik dat ik daar ::before en position absolute voor kan gebruiken.
 
+  <img src="readme-images/site-totnutoe.png" width="375px" alt="website tot nu toe">
+  
   ### Agenda voor meeting
   samen met je groepje opstellen
 
@@ -176,10 +183,10 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - geen <hr> gebruiken waar het niet hoort
+  - ::before en position absolute gebruiken voor klikbaar veld 
+  - <a> in <h3> ipv. andersom, want <a> is inline
+  - section heeft altijd een kopje
 
 </details>
 
