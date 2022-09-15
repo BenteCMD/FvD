@@ -155,7 +155,7 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
 ## Voortgang 1 (week 2)
 
 <details>
-  <summary>uitwerken voor 1e voortgang</summary>
+  <summary>Week 1 en 2 gingen goed. De eerste pagina (van de mobiele verise) is bijna af. </summary>
 
   ### Stand van zaken
   Het stylen van de elementen met CSS ging vrij goed. Het positioneren vond ik wel wat lastiger, ik neig vaak margins 
