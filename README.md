@@ -138,14 +138,13 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/breakdown_homebreakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
-  <img src="readme-images/breakdown_homebreakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown-homebreakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/breakdown_shopbreakdownschetsjpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -159,17 +158,10 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
+  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
   Het stylen van de elementen met CSS ging vrij goed. Het positioneren vond ik wel wat lastiger, ik neig vaak margins 
-  te gebruiken terwijl er betere oplossingen zijn. 
-  
-  Daarnaast vond ik het af en toe lastig om de juiste semantiek van de HTML gebruiken. Inmiddels denk ik wel het onderscheid 
-  tussen sections en articles te begrijpen. Ik sta er nu ook beter bij stil dat het van belang is de HTML eerst helemaal op orde te hebben
-  voordat je begint aan de CSS styling, scheelt heel wat werk..
-  
-  Verder heb ik geprobeerd mijn HTML toegankelijk te maken voor screen readers. Dit zorgde wel voor een uitdaing toen ik een 
-  hele article klikbaar wilde maken, maar de tekst van de <a> Inmiddels weet ik dat je daar ::before voor kan gebruiken.
-  
-  <img src= "readme-images/site-totnutoe.png" width="375px" alt="website tot nu toe">
+  te gebruiken terwijl er betere oplossingen zijn. Ook de juiste semantiek van de HTML vond ik af en toe lastig, omdat dat
+  de CSS styling soms moeilijker maakte (vb: <.br> element fout gebruiken).
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -184,10 +176,10 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - <hr> niet verkeerd gebruiken
-  - section heeft altijd een kopje
-  - ::before en position absolute gebruiken voor klikbaar veld
-  - <a> in <h3> ipv. andersom, want <a> is inline
+  - punt 1
+  - punt 2
+  - nog een punt
+  - ...
 
 </details>
 

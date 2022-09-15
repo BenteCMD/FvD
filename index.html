@@ -9,16 +9,17 @@
 	<title>Dopper - een waterfles met een missie</title>
 	
 	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<link rel="icon" type="image/svg+xml" href="images/dropicon.svg">
 </head>
 
 <body>
 	<header>
-		<h1 aria-label="Dopper homepagina"></h1>
-		<img src="images/dopperlogo-wit.svg" alt="logo Dopper">
+		<a id="skiptocontent-link" href="#main">Ga naar de inhoud van deze pagina</a>
+		<h1 aria-label="Dopper homepagina"><img src="images/dopperlogo-wit.svg"></h1>
 
 		<nav>
-			<ul>
+			<img src="images/hamburger-icon.svg" alt="menu">
+			 <!--- <ul> 
 				<li>
 					<a href="">Impact</a>
 				</li>
@@ -34,32 +35,32 @@
 				<li>
 					<a href="">Verhalen</a>
 				</li>
-			</ul>
+			</ul> -->
 		</nav>
-
-		<hr></hr>
-	</header>
-	<main>
 
 		<article>
 			<h2>Ga voor een schooljaar zonder plasticvervuiling.</h2>
 			<a href="shop.html">Shop jouw herbruikbare waterfles</a>
 		</article>
+		
+	</header>
+	<main>
 
 		<section class="zigzag-blauw">
+			<h2>Dopper feitjes</h2>
 			<ul>
 				<li>
-					<h2>40<br><span class="subtekst-h2">flessen</span></h2>
+					<h3>40<br>flessen</h3>
 					<img src="images/illustratie1.svg" alt = "illustratie van een dopperfles">
 					<p>Volgens onderzoek voorkomt één Dopperfles dat 40 plastic wegwerpflessen per jaar in onze oceaan belanden.</p>
 				</li>
 				<li>
-					<h2>125<br><span class="subtekst-h2">miljoen kg</span></h2>
+					<h3>125<br>miljoen kg</h3>
 					<img src="images/illustratie2.svg" alt = "illustratie van een vuist die een plasticfles slaat">
 					<p>Zoveel plastic wil Dopper uit onze oceaan weghouden.</p>
 				</li>
 				<li>
-					<h2>30<br><span class="subtekst-h2">blije vissen</span></h2>
+					<h3>30<br>blije vissen</h3>
 			        <img src="images/illustratie3.png" alt = "illustratie van een blije vis, die een gat in de lucht springt">
 			        <p>We hebben 't niet onderzocht, maar denken graag dat 30 vissen een gat in de lucht springen als jij een herbruikbare waterfles kiest.</p>
 				</li>
@@ -92,30 +93,28 @@
 		<section>
 			<h2>News splash</h2>
 			<p>Opzoek naar goed (lees: ocean-saving) nieuws?</p>
-			<a href=""">Zie alle artikelen</a>
-			<a href="">
-				<article>
-					<figure>
-						<img src="../images/dopper-recycle.jpeg" alt = "foto van flessen die gerecycled worden">
-						<figcaption><time datetime="2022-02-25">25 februari 2022</time></figcaption>
-					</figure>
-					<h3>Waarom we oude Dopper-flessen (nog) niet tot nieuwe recyclen</h3>
-				</article>
-			</a>
-			<a href="">
-				<article>
-					<figure>
-						<img src="../images/dopper-haai.jpeg" alt = "foto een haai in een schone oceaan">
-						<figcaption><time datetime="2021-10-30">30 november 2021</time></figcaption>
-					</figure>
-					<h3>Dopper sluit 2021 goed af: 5x goed nieuws voor onze oceanen</h3>
-				</article>
-			</a>
+			<a href="">Zie alle artikelen</a>
+			<article>
+				<figure>
+					<img src="../images/dopper-recycle.jpeg" alt = "foto van flessen die gerecycled worden">
+					<figcaption><time datetime="2022-02-25">25 februari 2022</time></figcaption>
+				</figure>
+				<a href=""><h3>Waarom we oude Dopper-flessen (nog) niet tot nieuwe recyclen</h3></a>
+			</article>
+			
+	        <article>
+				<figure>
+					<img src="../images/dopper-haai.jpeg" alt = "foto van een haai in een schone oceaan">
+					<figcaption><time datetime="2021-10-30">30 november 2021</time></figcaption>
+				</figure>
+				<h3><a href="#"></a>Dopper sluit 2021 goed af: 5x goed nieuws voor onze oceanen</a></h3>
+			</article>
+			
 		</section>
 
 		<article>
 			<video controls src="images/The Dopper Wave.mp4" alt = "introductie video van Dopper"></video>
-			<h2>Hallo wij zijn Dopper</h2>
+			<h2 arialabel="Dopper introductievideo">Hallo wij zijn Dopper</h2>
 		</article>
 	</main>
 
