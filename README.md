@@ -138,7 +138,7 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/breakdown-homebreakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown_homebreakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
@@ -183,7 +183,7 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - geen <hr> gebruiken waar het niet hoort
+  - geen <.hr> gebruiken waar het niet hoort
   - ::before en position absolute gebruiken voor klikbaar veld 
   - <a> in <h3> ipv. andersom, want <a> is inline
   - section heeft altijd een kopje
