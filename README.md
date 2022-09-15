@@ -168,7 +168,7 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
   Ook heb ik geprobeerd mijn HTML toegankelijk te maken voor screen-readers. Dit gaf wel een uitdaging: ik wilde een hele article
   klikbaar maken, zonder dat de screen-reader de hele <a> inhoud voor zou lezen. Inmiddels weet ik dat ik daar ::before en position absolute voor kan gebruiken.
 
-  <img src="readme-images/site-totnutoe.png" width="375px" alt="website tot nu toe">
+  <img src="readme-images/site-totnutoe.png" width="75px" alt="website tot nu toe">
   
   ### Agenda voor meeting
   samen met je groepje opstellen
