@@ -18,7 +18,7 @@
 		<h1 aria-label="Dopper homepagina"><img src="images/dopperlogo-wit.svg"></h1>
 
 		<nav>
-			<img src="images/hamburger-icon.svg" alt="menu">
+			<a href=""><img src="images/hamburger-icon.svg" alt="menu"></a>
 			 <!--- <ul> 
 				<li>
 					<a href="">Impact</a>
@@ -99,7 +99,7 @@
 					<img src="../images/dopper-recycle.jpeg" alt = "foto van flessen die gerecycled worden">
 					<figcaption><time datetime="2022-02-25">25 februari 2022</time></figcaption>
 				</figure>
-				<a href=""><h3>Waarom we oude Dopper-flessen (nog) niet tot nieuwe recyclen</h3></a>
+				<a href="#"><h3>Waarom we oude Dopper-flessen (nog) niet tot nieuwe recyclen</h3></a>
 			</article>
 			
 	        <article>
@@ -107,18 +107,37 @@
 					<img src="../images/dopper-haai.jpeg" alt = "foto van een haai in een schone oceaan">
 					<figcaption><time datetime="2021-10-30">30 november 2021</time></figcaption>
 				</figure>
-				<h3><a href="#"></a>Dopper sluit 2021 goed af: 5x goed nieuws voor onze oceanen</a></h3>
+				<a href="#"><h3>Dopper sluit 2021 goed af: 5x goed nieuws voor onze oceanen</h3></a>
 			</article>
-			
 		</section>
 
 		<article>
-			<video controls src="images/The Dopper Wave.mp4" alt = "introductie video van Dopper"></video>
-			<h2 arialabel="Dopper introductievideo">Hallo wij zijn Dopper</h2>
+			<video src="images/The Dopper Wave.mp4" poster="images/video-thumbnail.jpg" alt = "introductie video van Dopper"></video>
+			<img src="images/playbutton-icon.svg">
+			<h2 arialabel="Dopper introductievideo">Hallo, wij zijn Dopper</h2>
 		</article>
 	</main>
 
 	<footer>
+		
+		<article>
+			<h2>Nieuwsbrief</h2>
+			
+			<form>
+				<label for="email">Meld je aan voor onze nieuwsbrief!</label>
+				<input type="email" name="email" placeholder="cool_bottle21@example.com">	
+			
+				<button type="submit"><img src="images/versturen-icon.svg"></button>
+			</form>
+		</article>
+
+		<section>
+			<h2 class="screenreader-only" aria-label="social media links"></h2>
+			<a href=""><img src="images/insta-icon.svg" alt="instagram link"></a>
+			<a href=""><img src="images/fb-icon.svg" alt="facebook link"></a>
+			<a href=""><img src="images/twitter-icon.svg" alt="twitter link"></a>
+		</section>
+
 		<section>
 			<h2>Over Dopper</h2>
 			<ul>
@@ -143,14 +162,10 @@
 				</li>
 			</ul>
 		</section>
-		<article>
-			<h2>Nieuwsbrief</h2>
-			<img src="">
-			<p></p>
-			<form>
-				<button></button>
-			</form>
-		</article>
+
+
+		<p>Copyright ⓒ Dopper 2022</p>
+		
 	</footer>
 	
 
