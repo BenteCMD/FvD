@@ -197,10 +197,10 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
 ## Voortgang 2 (week 3)
 
 <details>
-  <summary>uitwerken voor 2e voortgang</summary>
+  <summary>In week 2 heb ik mij vooral bezig gehouden met het responsive maken van mijn website. Voor klein schermformaat heb ik een hamburgermenu toegvoegd en verder heb ik gewerkt met grid om elementen in de secties goed te positioneren. Dit weekend wil ik meer animaties aan mijn website toevoegen.</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Mijn CSS bestaat nu uit vrij veel regels. Ik vond het daardoor wel lastig het overzicht te bewaren. Vandaag ging bijv. mijn site "stuk", doordat ik iets op de verkeerde plek had gezet, maar niet meer wist waar. Inmiddels heb ik het opgelost. Ik ben nu bezig mijn CSS overzichtelijker te maken door o.a. comments toe te voegen.
 
 
   ### Agenda voor meeting
@@ -216,10 +216,8 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - CSS overzichtelijker maken door o.a. comments toe te voegen
+  - Bij het responsive maken goed letten op alle breakpoints
 
 </details>
 
