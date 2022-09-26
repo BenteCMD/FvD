@@ -3,15 +3,216 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Bente van der Zeijden>
+    <meta name="author" content="Bente van der Zeijden">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Dopper - Shop</title>
 
-    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/style-shop.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 <body>
+    <header>
+
+		<h1 aria-label="Dopper shop"><a tabindex="-1" href="index.html"><img src="images/dopperlogo-wit.svg"></a></h1>
+		<button aria-hidden="true">
+			<span class="line"></span>
+			<span class="line"></span>
+			<span class="line"></span>
+		</button>
+
+		<nav>
+			<ul> 
+                <li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="">Impact</a>
+				</li>
+				<li>
+					<a href="shop.html">Shop</a>
+				</li>
+				<li>
+					<a href="">Zakelijk</a>
+				</li>
+				<li>
+					<a href="">Educatie</a>
+				</li>
+				<li>
+					<a href="">Verhalen</a>
+				</li>
+			</ul> 
+		</nav>
+	</header>
+
+    <main>
+        <div id="header-img"></div>
+
+        <nav>
+            <ul>
+                <li><a href="#onzeflessen">Flessen</a></li>
+                <li><a href="#accessoires"">Accessoires</a></li>
+                <li><a href="#losseonderdelen">Losse onderdelen</a></li>
+            </ul>
+        </nav>
+
+        <section id="onzeflessen">
+            <h2>Onze flessen</h2>
+            <p>Met oceaan-reddende superkrachten.</p>
+            <ul>
+                <li>
+                    <div class="img-wrapper">
+                        <img src="./images/fles1.png" alt="Grote paarse Dopperfles">
+                    </div>
+                        <a href="">Dopper Insulated (580 ml) - Lemon Crush <br> €35,95 </a>
+                </li>
+                <li>
+                    <div class="img-wrapper">
+                        <img src="./images/fles1.png" alt="Kleine paarse Dopperfles">
+                    </div>
+                    <a href="">Dopper Insulated (350 ml) - Lemon Crush <br> €29,95 </a>
+                </li>
+                <li>
+                    <div class="img-wrapper">
+                        <img src="./images/fles2.png" alt="Grote lila Dopperfles">
+                    </div>
+                    <a href="">Dopper Insulated (580 ml) - Throwback Lilac <br> €35,95 </a>
+                </li>
+                <li>
+                    <div class="img-wrapper">
+                        <img src="./images/fles2.png" alt="Kleine lila Dopperfles">
+                    </div>
+                    <a href="">Dopper Insulated (350 ml) - Throwback Lilac <br> €29,95 </a>
+                </li>
+            </ul>
+        </section>
+        <section id="accessoires">
+            <h2>Accessoires</h2>
+            <ul>
+                <li>
+                    <div class="img-wrapper">
+                        <img src="./images/accessoire1.png" alt="Dopper handtas">
+                    </div>
+                    <a href="">Dopper Bottle Holder <br> €74,50</a>
+                </li>
+                <li>
+                  <div class="img-wrapper">
+                        <img src="./images/accessoire2.png" alt="Metalen haak om je fles aan te bevestigen">
+                  </div>
+                  <a href="">Dopper Carrier <br> €5,75</a>
+                </li>
+                <li>
+                   <div class="img-wrapper">
+                        <img src="./images/accessoire3.png" alt="Sportdop">
+                    </div>
+                    <a href="">Dopper Sport Cap - Artic Grey <br> €5,75</a>
+                </li>
+                <li>
+                   <div class="img-wrapper">
+                        <img src="./images/accessoire4.png" alt="Sportdop">
+                    </div>
+                    <a href="">Dopper Sport Cap - Atlantic Blue <br> €5,75</a>
+                </li>
+            </ul>
+        </section>
+        <section id="losseonderdelen">
+            <h2>Losse onderdelen</h2>
+            <ul>
+                <li>
+                    <div class="img-wrapper">
+                        <img src="./images/onderdeel1.png" alt="Kleine zwarte Dopper bovenkant">
+                    </div>
+                    <a href="">Dopper Insulated (350ml) - Black cup <br> €7,50 </a>
+                </li>
+                <li>
+                    <div class="img-wrapper">
+                        <img src="./images/onderdeel2.png" alt="Grote zwarte Dopper bovenkant">
+                    </div>
+                    <a href="">Dopper Insulated (580ml) - Black cup <br> €8,75 </a>
+                </li>
+                <li>
+                    <div class="img-wrapper">
+                        <img src="./images/onderdeel3.png" alt="Blauwe Dopper dop">
+                    </div>
+                    <a href="">Dopper Cap <br> €3,25</a>
+                </li>
+                <li>
+                    <div class="img-wrapper">
+                        <img src="./images/onderdeel4.png" alt="Blauwe Dopper onderkant">
+                    </div>
+                    <a href="">Dopper Original Bottle <br> €9,00 </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
     
+	<footer>
+		<div class="nieuwsbrief-socials">
+			<article>
+				<h2>Nieuwsbrief</h2>
+			
+				<form>
+					<label for="email">Meld je aan voor onze nieuwsbrief!</label>
+					<input type="email" name="email" placeholder="cool_bottle21@example.com">	
+	
+					<button type="submit"><img src="images/versturen-icon.svg"></button>
+				</form>
+			</article>
+
+			<article>
+				<h2 class="screenreader-only" aria-label="social media links"></h2>
+				<a href=""><img src="images/insta-icon.svg" alt="instagram link"></a>
+				<a href=""><img src="images/fb-icon.svg" alt="facebook link"></a>
+				<a href=""><img src="images/twitter-icon.svg" alt="twitter link"></a>
+			</article>
+		</div>
+
+		<section>
+			<h2 class="screenreader-only" aria-label="Informatie Dopper"></h2>
+			
+			<section class="section-inception">
+				<div class="h3-img">
+					<h3>Over Dopper</h3>
+					<img src="images/plus-btn.svg">
+				</div>
+				<ul>
+					<li><a href="">Over Dopper</a></li>
+					<li><a href="">Onze projecten</a></li>
+					<li><a href="">Het team</a></li>
+					<li><a href="">Vacatures</a></li>
+					<li><a href="">Blog</a></li>
+				</ul>
+			</section>
+			<section class="section-inception">
+				<div class="h3-img">
+					<h3>Contact</h3>
+					<img src="images/plus-btn.svg">
+				</div>
+				<ul>
+					<li><a href="">Contact</a></li>
+					<li><a href="">Help</a></li>
+					<li><a href="">Verkooppunten</a></li>
+				</ul>
+			</section>
+			<section class="section-inception">
+				<div class="h3-img">
+					<h3>Zakelijk</h3>
+					<img src="images/plus-btn.svg">
+				</div>
+				<ul>
+					<li><a href="">Doppers bedrukken</a></li>
+					<li><a href="">Retail bestellingen</a></li>
+				</ul>
+			</section>
+		</section>
+
+		<p>Copyright ⓒ Dopper 2022</p>
+		
+	</footer>
+	
+
+	<script defer src="scripts/script.js"></script>
 </body>
+	
 </html>

@@ -14,12 +14,16 @@
 
 <body>
 	<header>
-		<a id="skiptocontent-link" href="#main">Ga naar de inhoud van deze pagina</a>
-		<h1 aria-label="Dopper homepagina"><img src="images/dopperlogo-wit.svg"></h1>
+		
+		<h1 aria-label="Dopper homepagina"><a tabindex="-1" href="index.html"><img src="images/dopperlogo-wit.svg"></a></h1>
+		<button aria-hidden="true">
+			<span class="line"></span>
+			<span class="line"></span>
+			<span class="line"></span>
+		</button>
 
 		<nav>
-			<a href=""><img src="images/hamburger-icon.svg" alt="menu"></a>
-			 <!--- <ul> 
+			<ul> 
 				<li>
 					<a href="">Impact</a>
 				</li>
@@ -35,36 +39,37 @@
 				<li>
 					<a href="">Verhalen</a>
 				</li>
-			</ul> -->
+			</ul> 
 		</nav>
-
+		
+	</header>
+	<main>
 		<article>
 			<h2>Ga voor een schooljaar zonder plasticvervuiling.</h2>
 			<a href="shop.html">Shop jouw herbruikbare waterfles</a>
 		</article>
-		
-	</header>
-	<main>
 
 		<section class="zigzag-blauw">
-			<h2>Dopper feitjes</h2>
-			<ul>
-				<li>
-					<h3>40<br>flessen</h3>
-					<img src="images/illustratie1.svg" alt = "illustratie van een dopperfles">
-					<p>Volgens onderzoek voorkomt één Dopperfles dat 40 plastic wegwerpflessen per jaar in onze oceaan belanden.</p>
-				</li>
-				<li>
-					<h3>125<br>miljoen kg</h3>
-					<img src="images/illustratie2.svg" alt = "illustratie van een vuist die een plasticfles slaat">
-					<p>Zoveel plastic wil Dopper uit onze oceaan weghouden.</p>
-				</li>
-				<li>
-					<h3>30<br>blije vissen</h3>
-			        <img src="images/illustratie3.png" alt = "illustratie van een blije vis, die een gat in de lucht springt">
-			        <p>We hebben 't niet onderzocht, maar denken graag dat 30 vissen een gat in de lucht springen als jij een herbruikbare waterfles kiest.</p>
-				</li>
-			</ul>
+			<div class="smaller">
+				<h2>Dopper feitjes</h2>
+				<ul>
+					<li>
+						<h3>40<br>flessen</h3>
+						<img src="images/illustratie1.svg" alt = "illustratie van een dopperfles">
+						<p>Volgens onderzoek voorkomt één Dopperfles dat 40 plastic wegwerpflessen per jaar in onze oceaan belanden.</p>
+					</li>
+					<li>
+						<h3>125<br>miljoen kg</h3>
+						<img src="images/illustratie2.svg" alt = "illustratie van een vuist die een plasticfles slaat">
+						<p>Zoveel plastic wil Dopper uit onze oceaan weghouden.</p>
+					</li>
+					<li>
+						<h3>30<br>blije vissen</h3>
+			        	<img src="images/illustratie3.png" alt = "illustratie van een blije vis, die een gat in de lucht springt">
+			        	<p>We hebben 't niet onderzocht, maar denken graag dat 30 vissen een gat in de lucht springen als jij een herbruikbare waterfles kiest.</p>
+					</li>
+				</ul>
+			</div>
 		</section>
 
 		<article class="zigzag">
@@ -78,37 +83,42 @@
 
 		<section>
 			<h2>Onze producten</h2>
-			<article>
-				<img src="images/dopper-steel-collection.jpg" alt = "foto van stalen Dopperflessen">
-				<h3>Bestrijd plasticvervuiling op avonturen groot of klein.</h3>
-				<a href="shop.html">Shop Dopper Steel</a>
-			</article>
-			<article>
-				<img src="images/dopper-personaliseer-fles.jpg" alt = "foto van Dopperfles met je eigen naam erop">
-				<h3>Op naar een jaar zonder plasticvervuiling.</h3>
-				<a href="">Personaliseer je fles</a>
-			</article>
+			
+			<ul>
+				<li>
+					<img src="images/dopper-steel-collection.jpg" alt = "foto van stalen Dopperflessen">
+					<h3>Bestrijd plasticvervuiling op avonturen groot of klein.</h3>
+					<a href="shop.html">Shop Dopper Steel</a>
+				</li>
+				<li>
+					<img src="images/dopper-personaliseer-fles.jpg" alt = "foto van Dopperfles met je eigen naam erop">
+					<h3>Op naar een jaar zonder plasticvervuiling.</h3>
+					<a href="">Personaliseer je fles</a>
+				</li>
+			</ul>
 		</section>
 	
 		<section>
 			<h2>News splash</h2>
 			<p>Opzoek naar goed (lees: ocean-saving) nieuws?</p>
 			<a href="">Zie alle artikelen</a>
-			<article>
-				<figure>
-					<img src="images/dopper-recycle.jpeg" alt = "foto van flessen die gerecycled worden">
-					<figcaption><time datetime="2022-02-25">25 februari 2022</time></figcaption>
-				</figure>
-				<a href="#"><h3>Waarom we oude Dopper-flessen (nog) niet tot nieuwe recyclen</h3></a>
-			</article>
-			
-	        <article>
-				<figure>
-					<img src="images/dopper-haai.jpeg" alt = "foto van een haai in een schone oceaan">
-					<figcaption><time datetime="2021-10-30">30 november 2021</time></figcaption>
-				</figure>
-				<a href="#"><h3>Dopper sluit 2021 goed af: 5x goed nieuws voor onze oceanen</h3></a>
-			</article>
+			<ul>
+				<li>
+					<figure>
+						<img src="images/dopper-recycle.jpeg" alt = "foto van flessen die gerecycled worden">
+						<figcaption><time datetime="2022-02-25">25 februari 2022</time></figcaption>
+					</figure>
+					<a href="#"><h3>Waarom we oude Dopper-flessen (nog) niet tot nieuwe recyclen</h3></a>
+				</li>
+				
+				<li>
+					<figure>
+						<img src="images/dopper-haai.jpeg" alt = "foto van een haai in een schone oceaan">
+						<figcaption><time datetime="2021-10-30">30 november 2021</time></figcaption>
+					</figure>
+					<a href="#"><h3>Dopper sluit 2021 goed af: 5x goed nieuws voor onze oceanen</h3></a>
+				</li>
+			</ul>
 		</section>
 
 		<article>
@@ -119,50 +129,64 @@
 	</main>
 
 	<footer>
-		
-		<article>
-			<h2>Nieuwsbrief</h2>
+		<div class="nieuwsbrief-socials">
+			<article>
+				<h2>Nieuwsbrief</h2>
 			
-			<form>
-				<label for="email">Meld je aan voor onze nieuwsbrief!</label>
-				<input type="email" name="email" placeholder="cool_bottle21@example.com">	
+				<form>
+					<label for="email">Meld je aan voor onze nieuwsbrief!</label>
+					<input type="email" name="email" placeholder="cool_bottle21@example.com">	
+	
+					<button type="submit"><img src="images/versturen-icon.svg"></button>
+				</form>
+			</article>
+
+			<article>
+				<h2 class="screenreader-only" aria-label="social media links"></h2>
+				<a href=""><img src="images/insta-icon.svg" alt="instagram link"></a>
+				<a href=""><img src="images/fb-icon.svg" alt="facebook link"></a>
+				<a href=""><img src="images/twitter-icon.svg" alt="twitter link"></a>
+			</article>
+		</div>
+
+		<section>
+			<h2 class="screenreader-only" aria-label="Informatie Dopper"></h2>
 			
-				<button type="submit"><img src="images/versturen-icon.svg"></button>
-			</form>
-		</article>
-
-		<section>
-			<h2 class="screenreader-only" aria-label="social media links"></h2>
-			<a href=""><img src="images/insta-icon.svg" alt="instagram link"></a>
-			<a href=""><img src="images/fb-icon.svg" alt="facebook link"></a>
-			<a href=""><img src="images/twitter-icon.svg" alt="twitter link"></a>
+			<section class="section-inception">
+				<div class="h3-img">
+					<h3>Over Dopper</h3>
+					<img src="images/plus-btn.svg">
+				</div>
+				<ul>
+					<li><a href="">Over Dopper</a></li>
+					<li><a href="">Onze projecten</a></li>
+					<li><a href="">Het team</a></li>
+					<li><a href="">Vacatures</a></li>
+					<li><a href="">Blog</a></li>
+				</ul>
+			</section>
+			<section class="section-inception">
+				<div class="h3-img">
+					<h3>Contact</h3>
+					<img src="images/plus-btn.svg">
+				</div>
+				<ul>
+					<li><a href="">Contact</a></li>
+					<li><a href="">Help</a></li>
+					<li><a href="">Verkooppunten</a></li>
+				</ul>
+			</section>
+			<section class="section-inception">
+				<div class="h3-img">
+					<h3>Zakelijk</h3>
+					<img src="images/plus-btn.svg">
+				</div>
+				<ul>
+					<li><a href="">Doppers bedrukken</a></li>
+					<li><a href="">Retail bestellingen</a></li>
+				</ul>
+			</section>
 		</section>
-
-		<section>
-			<h2>Over Dopper</h2>
-			<ul>
-				<li>
-				
-				</li>
-			</ul>
-		</section>
-		<section>
-			<h2>Contact</h2>
-			<ul>
-				<li>
-				
-				</li>
-			</ul>
-		</section>
-		<section>
-			<h2>Zakelijk</h2>
-			<ul>
-				<li>
-				
-				</li>
-			</ul>
-		</section>
-
 
 		<p>Copyright ⓒ Dopper 2022</p>
 		
