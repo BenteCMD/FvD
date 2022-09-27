@@ -14,12 +14,7 @@
 <body>
     <header>
 
-		<h1 aria-label="Dopper shop"><a tabindex="-1" href="index.html"><img src="images/dopperlogo-wit.svg"></a></h1>
-		<button aria-hidden="true">
-			<span class="line"></span>
-			<span class="line"></span>
-			<span class="line"></span>
-		</button>
+		<h1 aria-label="Dopper shop"><a tabindex="-1" href="index.html"><img id="logo" src="images/dopperlogo-wit.svg"></a></h1>
 
 		<nav>
 			<ul> 
@@ -30,7 +25,7 @@
 					<a href="">Impact</a>
 				</li>
 				<li>
-					<a href="shop.html">Shop</a>
+					<a class = "huidigepagina" href="shop.html">Shop</a>
 				</li>
 				<li>
 					<a href="">Zakelijk</a>
@@ -38,11 +33,22 @@
 				<li>
 					<a href="">Educatie</a>
 				</li>
-				<li>
-					<a href="">Verhalen</a>
+                <li>
+					<a href=""><img src="images/cart-icon.svg" alt="winkelmandje"></a>
 				</li>
 			</ul> 
 		</nav>
+
+        <!--Naast die in de nav nog een extra winkelwagenknop in header. 
+                Ik heb de arialabel verborgen zodat een screenreader het niet dubbelop voorleest-->
+        <a aria-hidden="true" href=""><img id="extrashoppingcart" src="images/cart-icon.svg" alt="winkelmandje"><span>0</span></a> 
+    
+        <button aria-hidden="true">
+			<span class="line"></span>
+			<span class="line"></span>
+			<span class="line"></span>
+		</button>
+        
 	</header>
 
     <main>
@@ -61,28 +67,24 @@
             <p>Met oceaan-reddende superkrachten.</p>
             <ul>
                 <li>
-                    <div class="img-wrapper">
-                        <img src="./images/fles1.png" alt="Grote paarse Dopperfles">
-                    </div>
-                        <a href="">Dopper Insulated (580 ml) <br> Lemon Crush <br>  <span class="prijs">€35,95</span> </a>
+                    <img src="./images/fles1.png" alt="Grote paarse Dopperfles">
+                    <a href="">Dopper Insulated (580 ml) <br> Lemon Crush <br>  <span class="prijs">€35,95</span> </a>
+                    <button><img id="btn-icon" src="./images/cart-icon.svg">In winkelwagen</button>
                 </li>
                 <li>
-                    <div class="img-wrapper">
-                        <img src="./images/fles1.png" alt="Kleine paarse Dopperfles">
-                    </div>
+                    <img src="./images/fles1.png" alt="Kleine paarse Dopperfles">
                     <a href="">Dopper Insulated (350 ml) <br> Lemon Crush <br> <span class="prijs">€29,95</span> </a>
+                    <button><img id="btn-icon" src="./images/cart-icon.svg">In winkelwagen</button>
                 </li>
                 <li>
-                    <div class="img-wrapper">
-                        <img src="./images/fles2.png" alt="Grote lila Dopperfles">
-                    </div>
+                    <img src="./images/fles2.png" alt="Grote lila Dopperfles">
                     <a href="">Dopper Insulated (580 ml) <br> Throwback Lilac <br> <span class="prijs">€35,95</span> </a>
+                    <button><img id="btn-icon" src="./images/cart-icon.svg">In winkelwagen</button>
                 </li>
                 <li>
-                    <div class="img-wrapper">
-                        <img src="./images/fles2.png" alt="Kleine lila Dopperfles">
-                    </div>
+                    <img src="./images/fles2.png" alt="Kleine lila Dopperfles">
                     <a href="">Dopper Insulated (350 ml) <br> Throwback Lilac <br> <span class="prijs">€29,95</span> </a>
+                    <button><img id="btn-icon" src="./images/cart-icon.svg">In winkelwagen</button>
                 </li>
             </ul>
         </section>
@@ -90,28 +92,24 @@
             <h2>Accessoires</h2>
             <ul>
                 <li>
-                    <div class="img-wrapper">
-                        <img src="./images/accessoire1.png" alt="Dopper handtas">
-                    </div>
+                    <img src="./images/accessoire1.png" alt="Dopper handtas">
                     <a href="">Dopper Bottle Holder <br> <span class="prijs">€74,50</span></a>
+                    <button><img id="btn-icon" src="./images/cart-icon.svg">In winkelwagen</button>
                 </li>
                 <li>
-                  <div class="img-wrapper">
-                        <img src="./images/accessoire2.png" alt="Metalen haak om je fles aan te bevestigen">
-                  </div>
+                  <img src="./images/accessoire2.png" alt="Metalen haak om je fles aan te bevestigen">
                   <a href="">Dopper Carrier <br> <span class="prijs">€5,75</span></a>
+                  <button><img id="btn-icon" src="./images/cart-icon.svg">In winkelwagen</button>
                 </li>
                 <li>
-                   <div class="img-wrapper">
-                        <img src="./images/accessoire3.png" alt="Sportdop">
-                    </div>
+                    <img src="./images/accessoire3.png" alt="Sportdop">
                     <a href="">Dopper Sport Cap <br> Artic Grey <br> <span class="prijs">€5,75</span></a>
+                    <button><img id="btn-icon" src="./images/cart-icon.svg">In winkelwagen</button>
                 </li>
                 <li>
-                   <div class="img-wrapper">
-                        <img src="./images/accessoire4.png" alt="Sportdop">
-                    </div>
+                    <img src="./images/accessoire4.png" alt="Sportdop">
                     <a href="">Dopper Sport Cap <br> Atlantic Blue <br> <span class="prijs">€5,75</span></a>
+                    <button><img id="btn-icon" src="./images/cart-icon.svg">In winkelwagen</button>
                 </li>
             </ul>
         </section>
@@ -119,28 +117,24 @@
             <h2>Losse onderdelen</h2>
             <ul>
                 <li>
-                    <div class="img-wrapper">
-                        <img src="./images/onderdeel1.png" alt="Kleine zwarte Dopper bovenkant">
-                    </div>
+                    <img src="./images/onderdeel1.png" alt="Kleine zwarte Dopper bovenkant">
                     <a href="">Dopper Insulated (350ml) <br> Black cup <br> <span class="prijs">€7,50</span> </a>
+                    <button><img id="btn-icon" src="./images/cart-icon.svg">In winkelwagen</button>
                 </li>
                 <li>
-                    <div class="img-wrapper">
-                        <img src="./images/onderdeel2.png" alt="Grote zwarte Dopper bovenkant">
-                    </div>
+                    <img src="./images/onderdeel2.png" alt="Grote zwarte Dopper bovenkant">
                     <a href="">Dopper Insulated (580ml) <br> Black cup <br> <span class="prijs">€8,75</span> </a>
+                    <button><img id="btn-icon" src="./images/cart-icon.svg">In winkelwagen</button>
                 </li>
                 <li>
-                    <div class="img-wrapper">
-                        <img src="./images/onderdeel3.png" alt="Blauwe Dopper dop">
-                    </div>
+                    <img src="./images/onderdeel3.png" alt="Blauwe Dopper dop">
                     <a href="">Dopper Cap <br> <span class="prijs">€3,25</span></a>
+                    <button><img id="btn-icon" src="./images/cart-icon.svg">In winkelwagen</button>
                 </li>
                 <li>
-                    <div class="img-wrapper">
-                        <img src="./images/onderdeel4.png" alt="Blauwe Dopper onderkant">
-                    </div>
+                    <img src="./images/onderdeel4.png" alt="Blauwe Dopper onderkant">
                     <a href="">Dopper Original Bottle <br> <span class="prijs">€9,00</span> </a>
+                    <button><img id="btn-icon" src="./images/cart-icon.svg">In winkelwagen</button>
                 </li>
             </ul>
         </section>

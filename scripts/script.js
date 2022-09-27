@@ -61,3 +61,38 @@ function dropDown() {
     droppedDown = false;
   }
 }
+
+
+
+
+//winkelmandje animatie - werkt alleen voor de eerste voeg toe button van de pagina en maar voor 1 keer (weet niet waarom)//
+//Dus het werk niet perfect, maar toch leuk om te proberen. Ik begrijp de onderstaande code wel//
+
+var cartBtn = document.querySelector("main section ul li button") 
+
+
+
+cartBtn.addEventListener("click", voegToeAanWinkelwagen);
+
+
+function voegToeAanWinkelwagen() {
+
+  console.log("added")
+
+  let winkelwagenAantal = document.querySelector("header span")
+  let currentAmount = winkelwagenAantal.innerHTML;
+  /* dat is een string(tekst) - dus even omzetten naar een getal, want anders wordt het: 01 011 0111*/
+  currentAmount = parseInt(currentAmount);
+
+  /* het nieuwe aantal vissen in de cart bepalen */
+  /* 1 bij het huisige aantal optellen */
+  let newAmount = currentAmount + 1;
+
+  /* tenslotte het nieuwe aantal in de HTML zetten */
+  winkelwagenAantal.innerHTML = newAmount;
+
+  /*class met animatie toevoegen*/
+  winkelwagenAantal.classList.add("cart-animatie")
+
+  
+}
