@@ -126,7 +126,7 @@ In de les heb ik de toegankelijkheid van de Dopper site getest d.m.v. mij in te 
   
 Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis) 
 - kleine letters moeilijk te lezen
-- kleurcontrast vermindert
+- kleurcontrast vermindert. Witte tekst op lichtblauwe vlakken moeilijk te lezen.
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 - kleurcontrast omhoog
 - groot lettertype
@@ -268,9 +268,13 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Bij de Dopper site viel mij het volgende op:
+  - Kleurcontrast was af en toe te laag. Vb: witte tekst op lichtblauwe vlakken.
+  - Bij een groot schermgrootte, wordt de tekst nogal klein.
+  
+   In mijn site heb ik verbeterd:
+  - Kleurcontrast altijd hoog op alle onderdelen.
+  - Lekker grote tekst. Font-size niet kleiner dan 1em.
 
 </details>
 
