@@ -262,9 +262,12 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+   Bij de Dopper site viel mij het volgende op:
+  - Moeilijk om op gewenste knop te drukken, knoppen zijn vrij klein.
+  
+  In mijn site heb ik verbeterd:
+  - In mijn site heb ik de klikvelden groot gemaakt.
+  Maar wel genoeg ruimte tussen de knoppen gehouden.
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
@@ -343,9 +346,9 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
 ## Bronnenlijst
 
 <details open>
-  Alle afbeeldingen en tekst zijn van www.dopper.nl
-  Alle iconen heb ik zelf met Adobe illustrator gemaakt
+  
+  - Alle afbeeldingen en tekst zijn van www.dopper.nl
+  - Alle iconen heb ik zelf met Adobe illustrator gemaakt
 
  
-
 </details>
