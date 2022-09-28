@@ -14,7 +14,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details open>
   <summary>Ik ben Bente, woon in Amsterdam en ben 22 jaar oud. Ik hou van muziek luisteren, longboarden en vrienden zien.
-  Het eerste jaar CMD vond ik erg leuk, met name de vormgevingsvakken. Het vak inleiding programmeren vond ik uitdagend, maar leuk. Uitdagend omdat ik het nog lastig vind overzicht te creëeren in mijn code, maar wel leuk als het uiteindelijk lukte om het gewenste resultaat te krijgen. </summary>
+  Het eerste jaar CMD vond ik erg leuk, met name de vormgevingsvakken. Internetstandaarden vond ik leuk, CSS/HTML ging mij redelijk goed af. Het vak inleiding programmeren vond ik uitdagend, maar leuk. Uitdagend omdat ik het nog lastig vind overzicht te creëeren in mijn code, maar wel leuk als het uiteindelijk lukte om het gewenste resultaat te krijgen. </summary>
 
   ### Auteur:
  Bente van der Zeijden
