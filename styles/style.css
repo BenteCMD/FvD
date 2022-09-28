@@ -938,7 +938,6 @@ footer article:first-of-type {
 form {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: left;
 }
 
 input {
@@ -1162,7 +1161,6 @@ footer p {
 
 .zigzag:after {
     background: linear-gradient(-30deg, #ffffff 16px, transparent 0), linear-gradient(30deg, #ffffff 16px, transparent 0);
-    background-position: left-bottom;
     background-repeat: repeat-x;
     background-size: 32px 32px;
     content: " ";
@@ -1181,7 +1179,6 @@ footer p {
 
 .zigzag-blauw:after {
     background: linear-gradient(-30deg, var(--color-main) 16px, transparent 0), linear-gradient(30deg, var(--color-main) 16px, transparent 0);
-    background-position: left-bottom;
     background-repeat: repeat-x;
     background-size: 32px 32px;
     content: " ";
