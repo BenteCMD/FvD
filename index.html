@@ -15,7 +15,7 @@
 <body class="home">
 	<header>
 
-		<h1 aria-label="Dopper homepagina"></h1>
+		<h1 class="screenreader-only">Dopper homepagina</h1>
 		<a aria-hidden="true" tabindex="-1" href="index.html"><img id="logo" src="images/dopperlogo-wit.svg" alt="dopper logo"></a>
 
 		<button aria-hidden="true">
@@ -37,13 +37,13 @@
 					<a href="shop.html">Shop</a>
 				</li>
 				<li>
-					<a href="">Zakelijk</a>
+					<a href="#">Zakelijk</a>
 				</li>
 				<li>
-					<a href="">Educatie</a>
+					<a href="#">Educatie</a>
 				</li>
 				<li>
-					<a href=""><img src="images/cart-icon.svg" alt="winkelmandje"></a>
+					<a href="#"><img src="images/cart-icon.svg" alt="winkelmandje"></a>
 				</li>
 			</ul>
 		</nav>
@@ -142,12 +142,11 @@
 		</section>
 
 		<article>
-			<video poster="images/video-thumbnail.jpg"> 
-				<source src="images/The Dopper Wave.mp4" alt="introductie video van Dopper"
-				type="video/mp4">
+			<video poster="images/video-thumbnail.jpg" alt="introductie video van Dopper" type="video/mp4"> 
+				<source src="images/The Dopper Wave.mp4">
 			</video>
 			<img src="images/playbutton-icon.svg" alt="playbutton">
-			<h2 arialabel="Dopper introductievideo">Hallo, wij zijn Dopper</h2>
+			<h2>Hallo, wij zijn Dopper</h2>
 		</article>
 	</main>
 
@@ -199,10 +198,10 @@
 					<li><a href="">Verkooppunten</a></li>
 				</ul>
 			</section>
-			<section class="section-inception" alt="uitklapknop">
+			<section class="section-inception">
 				<div class="h3-img">
 					<h3>Zakelijk</h3>
-					<img src="images/plus-btn.svg">
+					<img src="images/plus-btn.svg" alt="uitklapknop">
 				</div>
 				<ul>
 					<li><a href="">Doppers bedrukken</a></li>

@@ -1385,7 +1385,7 @@ footer p {
    outline: none;
 }
 
-#btn-icon {
+#onzeflessen li button img, #accessoires li button img, #losseonderdelen li button img {
     width: 25px;
     height: 25px;
     margin-right: 1em;
