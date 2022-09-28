@@ -236,15 +236,29 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Bij de Dopper site viel mij het volgende op:
+ - Je moest eerst door alle navigatie tabben, voordat je bij de inhoud van de pagina terecht kwam. Er waren geen shortcut links, waardoor het lang duurde om de eerste pagina te lezen.
+ - Tijdens het voorlezen van het submenu, hoorde ik alleen maar "koplink, koplink, koplink". De titel van de link werd niet genoemd.
+ - Sommige tekst wordt dubbel voorgelezen. 
+ - Hij leest de html voor afbeeldingen voor ipv. een alternatieve tekst
+  
+  In mijn site heb ik het volgende verbeterd:
+  - Ik heb gezorgd dat alle headings en linkjes een duidelijke arialabel hebben dat wordt voorgelezen
+  - Afbeeldingen hebben een duidelijke alt en afbeeldingen die niet essentieel zijn hebben een aria-hidden="true
+  - Tekst wordt niet dubbel voorgelezen
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+ Bij de Dopper site viel mij het volgende op:
+  - Erdoorheen tabben duurde lang; geen shortcuts, eerst door alle navigatielinks heen
+  - Niet duidelijk aangegeven welk element je op gefocust bent
+  - Wanneer je door het menu navigeert, blijft het submenu onzichtbaar
+  
+  In mijn site heb ik verbeterd:
+  - Ik heb de focus state een duidelijke dikke fel gele border gegeven
+  - Ik heb shortcuts toegevoegd, die je secties laat skippen.
 
 
   #### Motoriek (shocks, elastiekjes)
@@ -325,12 +339,9 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
 ## Bronnenlijst
 
 <details open>
-  <summary>continu bijhouden terwijl je werkt</summary>
+  Alle afbeeldingen en tekst zijn van www.dopper.nl
+  Alle iconen heb ik zelf met Adobe illustrator gemaakt
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
-
-  1. bron 1
-  2. bron 2
-  3. ...
+ 
 
 </details>
