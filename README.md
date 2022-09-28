@@ -86,6 +86,8 @@ In de les heb ik de toegankelijkheid van de Dopper site getest d.m.v. mij in te 
  Het was een vrij frustrerende ervaring om de screenreader te gebruiken. Een robotstem bleef maar alle inhoud op het scherm voorlezen, zonder dat ik er controle over had. Bij de Dopper site viel mij het volgende op:
  - Je moest eerst door alle navigatie tabben, voordat je bij de inhoud van de pagina terecht kwam. Er waren geen shortcut links, waardoor het lang duurde om de eerste pagina te lezen.
  - Tijdens het voorlezen van het submenu, hoorde ik alleen maar "koplink, koplink, koplink". De titel van de link werd niet genoemd.
+ - Sommige tekst wordt dubbel voorgelezen. 
+ - Hij leest de html voor afbeeldingen voor ipv. een alternatieve tekst
 
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
