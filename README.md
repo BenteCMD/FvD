@@ -272,7 +272,7 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   
-  <img src="readme-images/WhatsApp Image 2022-09-28 at 11.07.21.JPEG" width="375px" alt="contrastbrilletje">
+  <img src="readme-images/contrastbril.jpeg" width="375px" alt="contrastbrilletje">
   
   Bij de Dopper site viel mij het volgende op:
   - Kleurcontrast was af en toe te laag. Vb: witte tekst op lichtblauwe vlakken.
