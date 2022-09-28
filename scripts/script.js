@@ -42,7 +42,7 @@ function veranderHeader() {
 
 //drop-down link menu in footer//
 
-const plusBtn = document.querySelector("footer section img")
+const plusBtn = document.querySelector("footer section img");
 const h3 = document.querySelector("footer section h3")
 const dropdownMenu = document.querySelector("footer section ul")
 let droppedDown = false;
@@ -65,8 +65,7 @@ function dropDown() {
 
 
 
-//winkelmandje animatie - werkt alleen voor de eerste voeg toe button van de pagina en maar voor 1 keer (weet niet waarom)//
-//Dus het werk niet perfect, maar toch leuk om te proberen. Ik begrijp de onderstaande code wel//
+//winkelmandje animatie//
 
 var cartBtn = document.querySelector("main section ul li button") 
 
@@ -84,7 +83,6 @@ function voegToeAanWinkelwagen() {
   /* dat is een string(tekst) - dus even omzetten naar een getal, want anders wordt het: 01 011 0111*/
   currentAmount = parseInt(currentAmount);
 
-  /* het nieuwe aantal vissen in de cart bepalen */
   /* 1 bij het huisige aantal optellen */
   let newAmount = currentAmount + 1;
 

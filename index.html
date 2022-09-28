@@ -1,21 +1,22 @@
 <!doctype html>
 <html lang="nl">
-	
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="author" content="Bente van der Zeijden">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<title>Dopper - een waterfles met een missie</title>
-	
+
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/dropicon.svg">
 </head>
 
-<body>
+<body class="home">
 	<header>
-		
-		<h1 aria-label="Dopper homepagina"><a tabindex="-1" href="index.html"><img id="logo" src="images/dopperlogo-wit.svg"></a></h1>
+
+		<h1 aria-label="Dopper homepagina"><a tabindex="-1" href="index.html"><img id="logo"
+					src="images/dopperlogo-wit.svg" alt="Dopper homepagina"></a></h1>
 		<button aria-hidden="true">
 			<span class="line"></span>
 			<span class="line"></span>
@@ -23,9 +24,10 @@
 		</button>
 
 		<nav>
-			<ul> 
+			<a id="skiplink" aria-hidden="true" href="#main">Skip naar inhoud</a>
+			<ul>
 				<li>
-					<a class = "huidigepagina" href="index.html">Home</a>
+					<a class="huidigepagina" href="index.html">Home</a>
 				</li>
 				<li>
 					<a href="">Impact</a>
@@ -42,11 +44,15 @@
 				<li>
 					<a href=""><img src="images/cart-icon.svg" alt="winkelmandje"></a>
 				</li>
-			</ul> 
+			</ul>
 		</nav>
-	
+
+		<!--Naast die in de nav nog een extra winkelwagenknop in header. 
+                Ik heb de arialabel verborgen zodat een screenreader het niet dubbelop voorleest-->
+				<a tabindex = "-1" aria-hidden="true" href=""><img id="extrashoppingcart" src="images/cart-icon.svg" alt="winkelmandje"><span>0</span></a> 
+
 	</header>
-	<main>
+	<main id="main">
 		<article>
 			<h2>Ga voor een schooljaar zonder plasticvervuiling.</h2>
 			<a href="shop.html">Shop jouw herbruikbare waterfles</a>
@@ -58,49 +64,55 @@
 				<ul>
 					<li>
 						<h3>40<br>flessen</h3>
-						<img src="images/illustratie1.svg" alt = "illustratie van een dopperfles">
-						<p>Volgens onderzoek voorkomt één Dopperfles dat 40 plastic wegwerpflessen per jaar in onze oceaan belanden.</p>
+						<img src="images/illustratie1.svg" alt="illustratie van een dopperfles">
+						<p>Volgens onderzoek voorkomt één Dopperfles dat 40 plastic wegwerpflessen per jaar in onze
+							oceaan belanden.</p>
 					</li>
 					<li>
 						<h3>125<br>miljoen kg</h3>
-						<img src="images/illustratie2.svg" alt = "illustratie van een vuist die een plasticfles slaat">
+						<img src="images/illustratie2.svg" alt="illustratie van een vuist die een plasticfles slaat">
 						<p>Zoveel plastic wil Dopper uit onze oceaan weghouden.</p>
 					</li>
 					<li>
 						<h3>30<br>blije vissen</h3>
-			        	<img src="images/illustratie3.png" alt = "illustratie van een blije vis, die een gat in de lucht springt">
-			        	<p>We hebben 't niet onderzocht, maar denken graag dat 30 vissen een gat in de lucht springen als jij een herbruikbare waterfles kiest.</p>
+						<img src="images/illustratie3.png"
+							alt="illustratie van een blije vis, die een gat in de lucht springt">
+						<p>We hebben 't niet onderzocht, maar denken graag dat 30 vissen een gat in de lucht springen
+							als jij een herbruikbare waterfles kiest.</p>
 					</li>
 				</ul>
 			</div>
 		</section>
 
 		<article class="zigzag">
-			<img src="images/dopper-gif.gif" alt = "verschillende plaatjes van mensen die de Dopperfles gebruiken">
+			<img src="images/dopper-gif.gif" alt="verschillende plaatjes van mensen die de Dopperfles gebruiken">
 			<h2><span class="accent-tekst">Grote</span> dorst of een <span class="accent-tekst">kleine</span> tas?</h2>
-			<p>Maak kennis met de Dopper Steel. De serieus sterke, lichte, herbruikbare, waterfles met hét perfecte formaat voor je volgende avontuur.
-				Keuze uit 1,1 liter, 800 ml, 490 ml en 350 ml. Die volgende keer dat je geen herbruikbare waterfles kunt meenemen? Die komt er niet.</p>
-			<p>Wolkenkrabbers beklimmen, festivalhoppen, grote dorst of een kleine tas: er is altijd een ideale maat Dopper Steel waarmee jij plasticvervuiling kunt tegengaan.</p>
+			<p>Maak kennis met de Dopper Steel. De serieus sterke, lichte, herbruikbare, waterfles met hét perfecte
+				formaat voor je volgende avontuur.
+				Keuze uit 1,1 liter, 800 ml, 490 ml en 350 ml. Die volgende keer dat je geen herbruikbare waterfles kunt
+				meenemen? Die komt er niet.</p>
+			<p>Wolkenkrabbers beklimmen, festivalhoppen, grote dorst of een kleine tas: er is altijd een ideale maat
+				Dopper Steel waarmee jij plasticvervuiling kunt tegengaan.</p>
 			<a href=shop.html>Shop nu</a>
 		</article>
 
 		<section>
 			<h2>Onze producten</h2>
-			
+
 			<ul>
 				<li>
-					<img src="images/dopper-steel-collection.jpg" alt = "foto van stalen Dopperflessen">
+					<img src="images/dopper-steel-collection.jpg" alt="foto van stalen Dopperflessen">
 					<h3>Bestrijd plasticvervuiling op avonturen groot of klein.</h3>
 					<a href="shop.html">Shop Dopper Steel</a>
 				</li>
 				<li>
-					<img src="images/dopper-personaliseer-fles.jpg" alt = "foto van Dopperfles met je eigen naam erop">
+					<img src="images/dopper-personaliseer-fles.jpg" alt="foto van Dopperfles met je eigen naam erop">
 					<h3>Op naar een jaar zonder plasticvervuiling.</h3>
 					<a href="">Personaliseer je fles</a>
 				</li>
 			</ul>
 		</section>
-	
+
 		<section>
 			<h2>News splash</h2>
 			<p>Opzoek naar goed (lees: ocean-saving) nieuws?</p>
@@ -108,24 +120,29 @@
 			<ul>
 				<li>
 					<figure>
-						<img src="images/dopper-recycle.jpeg" alt = "foto van flessen die gerecycled worden">
+						<img src="images/dopper-recycle.jpeg" alt="foto van flessen die gerecycled worden">
 						<figcaption><time datetime="2022-02-25">25 februari 2022</time></figcaption>
 					</figure>
-					<a href="#"><h3>Waarom we oude Dopper-flessen (nog) niet tot nieuwe recyclen</h3></a>
+					<a href="#">
+						<h3>Waarom we oude Dopper-flessen (nog) niet tot nieuwe recyclen</h3>
+					</a>
 				</li>
-				
+
 				<li>
 					<figure>
-						<img src="images/dopper-haai.jpeg" alt = "foto van een haai in een schone oceaan">
+						<img src="images/dopper-haai.jpeg" alt="foto van een haai in een schone oceaan">
 						<figcaption><time datetime="2021-10-30">30 november 2021</time></figcaption>
 					</figure>
-					<a href="#"><h3>Dopper sluit 2021 goed af: 5x goed nieuws voor onze oceanen</h3></a>
+					<a href="#">
+						<h3>Dopper sluit 2021 goed af: 5x goed nieuws voor onze oceanen</h3>
+					</a>
 				</li>
 			</ul>
 		</section>
 
 		<article>
-			<video src="images/The Dopper Wave.mp4" poster="images/video-thumbnail.jpg" alt = "introductie video van Dopper"></video>
+			<video src="images/The Dopper Wave.mp4" poster="images/video-thumbnail.jpg"
+				alt="introductie video van Dopper"></video>
 			<img src="images/playbutton-icon.svg">
 			<h2 arialabel="Dopper introductievideo">Hallo, wij zijn Dopper</h2>
 		</article>
@@ -135,11 +152,11 @@
 		<div class="nieuwsbrief-socials">
 			<article>
 				<h2>Nieuwsbrief</h2>
-			
+
 				<form>
 					<label for="email">Meld je aan voor onze nieuwsbrief!</label>
-					<input type="email" name="email" placeholder="cool_bottle21@example.com">	
-	
+					<input type="email" name="email" placeholder="cool_bottle21@example.com">
+
 					<button type="submit"><img src="images/versturen-icon.svg"></button>
 				</form>
 			</article>
@@ -154,7 +171,7 @@
 
 		<section>
 			<h2 class="screenreader-only" aria-label="Informatie Dopper"></h2>
-			
+
 			<section class="section-inception">
 				<div class="h3-img">
 					<h3>Over Dopper</h3>
@@ -192,11 +209,11 @@
 		</section>
 
 		<p>Copyright ⓒ Dopper 2022</p>
-		
+
 	</footer>
-	
+
 
 	<script defer src="scripts/script.js"></script>
 </body>
-	
+
 </html>

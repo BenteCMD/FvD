@@ -179,7 +179,6 @@ header nav {
 	z-index: 1;
 
 	transform:translateX(100%);
-	transition:transform .3s;
 }
 
 header nav ul {
@@ -417,7 +416,7 @@ main {
 	right: 0;
 }
 
-main nav {
+.shop main nav {
     margin-top: 23em;
     position: sticky; 
     top: 3em;
@@ -425,39 +424,39 @@ main nav {
     z-index: 9;
 }
 
-main nav ul {
+.shop main nav ul {
     display: flex;
     justify-content: center;
     gap: 2em;
     padding: 1em;
 }
 
-main nav a {
+.shop main nav a {
     color: grey;
     font-size: 1rem;
 }
 
-main nav a:hover {
+.shop main nav a:hover {
     color: var(--color-main);
 }
 
-main nav a:focus {
+.shop main nav a:focus {
     border: 5px solid var(--color-accent);
     outline: none;
     color: var(--color-main);
 }
 
-main nav a:active {
+.shop main nav a:active {
     border: none;
 }
 
 @media (min-width: 570px) {
 
-    main nav ul {
+    .shop main nav ul {
         gap: 5em;
     }
 
-    main nav a {
+    .shop main nav a {
         font-size: 1.3rem;
     }
 }
@@ -466,30 +465,30 @@ main nav a:active {
 /*  Producten  */
 /***************/
 
-main section:first-of-type {
+.shop main section:first-of-type {
     margin-top: 1em;
 }
 
-main section h2 {
+.shop main section h2 {
     text-align: center;
     margin-left: 0;
 }
 
-main section p {
+.shop main section p {
     text-align: center;
     margin-top: .5em;
     margin-bottom: 1em;
 }
 
 
-main section ul {
+.shop main section ul {
     display: grid;
 	grid-template-columns:repeat(auto-fit, minmax(10em, 1fr));
     gap: 1em;
     padding: 1em;
 }
 
-main section ul li {
+.shop main section ul li {
     margin-bottom: 2em;
     display: flex;
     flex-direction: column;
@@ -499,28 +498,28 @@ main section ul li {
     position: relative;
 }
 
-main section:first-of-type ul li:nth-of-type(odd) img {
+.shop main section:first-of-type ul li:nth-of-type(odd) img {
     width: 90px;
     height: 190px;
 }
 
-main section:first-of-type ul li:nth-of-type(even) img {
+.shop main section:first-of-type ul li:nth-of-type(even) img {
     width: 80px;
     height: 175px;
 }
 
-main section ul li img {
+.shop main section ul li img {
     width: 150px;
 }
 
-main section ul li a {
+.shop main section ul li a {
     display: block;
     text-align: center;
     min-width: 180px;
     font-size: .85rem;
 }
 
-main section ul li a:focus {
+.shop main section ul li a:focus {
     outline: none;
 }
 
@@ -528,7 +527,7 @@ main section ul li a:focus {
     font-family: Gilroy, sans-serif;
 }
 
-main section ul li a::before {
+.shop main section ul li a::before {
     position: absolute;
 	content: "";
 	top: 0;
@@ -537,7 +536,7 @@ main section ul li a::before {
 	right: 0;
 }
 
-main section ul li a:hover::before, main section ul li a:focus::before{
+.shop main section ul li a:hover::before, .shop main section ul li a:focus::before{
     background-color: var(--color-selection);
     border-radius: 100%;
     z-index: -1;
@@ -545,11 +544,11 @@ main section ul li a:hover::before, main section ul li a:focus::before{
     height: 250px;
 }
 
-main section ul li a:active {
+.shop main section ul li a:active {
    color: black;
 }
 
-main button {
+.shop main button {
     background-color: var(--color-main);
     color: white;
     font-family: var(--kop-text);
@@ -562,11 +561,11 @@ main button {
     font-size: .8rem;
 }
 
-main button:hover {
+.shop main button:hover {
     background-color: var(--color-selection);
 }
 
-main button:focus {
+.shop main button:focus {
    border: 5px solid var(--color-accent);
    background-color: var(--color-selection);
    outline: none;
@@ -604,26 +603,26 @@ main section ul li img:hover {
 
 @media (min-width: 650px) {
 
-    main section h2 {
+    .shop main section h2 {
         font-size: 2.5rem;
     }
 
-    main section p {
+    .shop main section p {
        font-size: 1.3rem;
     }
 
-    main section ul li a {
+    .shop main section ul li a {
         margin-top: 1em;
     }
 
-    main section ul li img {
+    .shop main section ul li img {
         transform: scale(1.2);
     }
 }
 
 @media (min-width: 1000px) {
 
-    main section ul li a {
+    .shop main section ul li a {
         font-size: 1rem;
     }
 }
