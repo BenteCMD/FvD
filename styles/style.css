@@ -129,7 +129,7 @@ header {
 	width: 132px;
 	max-height: 29px;
     margin-left: 1em;
-	margin-top: .5em;
+	margin-top: 1em;
 }
 
 #logo, header + a {
@@ -169,6 +169,7 @@ header nav {
 #skiplink {
 	position: absolute;
 	transform:translateY(-100%);
+	color: white;
 }
 
 #skiplink:focus {
@@ -851,9 +852,11 @@ video {
 
 .home main article:last-of-type h2 {
 	position: absolute;
-	top: 350px;
-	left: 24px;
+	top: 65%;
+	left: 50%;
+	transform: translateX(-60%);
 	color: white;
+	min-width: 300px;
 }
 
 video + img {
@@ -1231,7 +1234,7 @@ footer p {
     padding: 1em;
 }
 
-.shop main nav a {
+.shop main nav ul li a {
     color: rgb(72,72,72);
     font-size: 1rem;
 }
@@ -1256,7 +1259,7 @@ footer p {
         gap: 5em;
     }
 
-    .shop main nav a {
+    .shop main nav ul li a {
         font-size: 1.3rem;
     }
 }
@@ -1267,6 +1270,10 @@ footer p {
 
 .shop main section:first-of-type {
     margin-top: 1em;
+}
+
+.shop main section {
+	margin-bottom: 3em;
 }
 
 .shop main section h2 {
@@ -1385,6 +1392,10 @@ footer p {
 }
 
 @media (min-width: 650px) {
+
+	.shop main section {
+		margin-bottom: 5em;
+	}
 
     .shop main section h2 {
         font-size: 2.5rem;
