@@ -61,6 +61,7 @@ body {
 	color: var(--color-main);
 	background-color: var(--color-main2);
 	font-family: "Gilroy semibold", sans-serif;
+	overflow-x: hidden;
 }
 
 img {
@@ -130,16 +131,15 @@ header {
 	min-height: 50px;
 }
 
-#logo {
-	/*:firstchild werkte niet, de shoppingbag icon werd ook geselecteerd.. Dus toch maar een ID */
+img[alt="dopper logo"] {
 	width: 132px;
 	max-height: 29px;
 	margin-left: 1em;
 	margin-top: 1em;
 }
 
-#logo,
-header+a {
+img[alt="dopper logo"],
+header + a {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -147,17 +147,9 @@ header+a {
 
 @media (min-width: 650px) {
 
-	#logo,
-	header+a {
+	img[alt="dopper logo"],
+	header + a {
 		transform: scale(.9);
-	}
-}
-
-@media (min-width: 650px) {
-
-	#logo,
-	header+a {
-		transform: scale(.8);
 	}
 }
 
@@ -175,13 +167,13 @@ header nav {
 
 }
 
-#skiplink {
+a[href="#content"] {
 	position: absolute;
 	transform: translateY(-100%);
 	color: white;
 }
 
-#skiplink:focus {
+a[href="#content"]:focus {
 	transform: translateY(0%);
 }
 
@@ -270,7 +262,6 @@ header nav li a:active {
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-		gap: 1.5em;
 		margin-top: 0;
 	}
 
@@ -283,19 +274,19 @@ header nav li a:active {
 		right: 48px;
 	}
 
-	#extrashoppingcart {
+	header img[alt="winkelmandje"] {
 		display: none;
 	}
 }
 
-@media (min-width: 770px) {
+@media (min-width: 700px) {
 	header nav ul {
 		gap: 2em
 	}
 }
 
 
-#extrashoppingcart {
+header img[alt="winkelmandje"] {
 	width: 25px;
 	height: 25px;
 	position: fixed;
@@ -583,7 +574,6 @@ main {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
-	grid-auto-rows: min-content;
 }
 
 .home main article:nth-of-type(2) img {
@@ -603,6 +593,7 @@ main {
 	margin-bottom: 1em;
 	color: var(--color-main2);
 	grid-column-start: span 2;
+	max-width: 450px;
 }
 
 .home main article:nth-of-type(2) p:nth-of-type(2) {
@@ -616,19 +607,18 @@ main {
 	line-height: 1em;
 	margin-bottom: 1em;
 	margin-top: 1em;
-	margin-left: .7em;
+	margin-left: .5em;
 	color: var(--color-main2);
 	grid-column-start: span 2;
 }
 
-.home main article:nth-of-type(2) h2 .accent-tekst {
+.accent-tekst {
 	color: var(--color-accent);
 }
 
 @media (min-width: 650px) {
 	.home main article:nth-of-type(2) {
 		grid-template-columns: 1fr 2fr 2fr 1fr;
-		min-height: 500px;
 		justify-items: start;
 		align-items: start;
 		min-height: 450px;
@@ -648,6 +638,7 @@ main {
 		margin-bottom: 1em;
 		min-width: 300px;
 		margin-bottom: 0;
+		margin-left: .7em;
 	}
 
 	.home main article:nth-of-type(2) p {
@@ -670,7 +661,6 @@ main {
 		grid-column-end: 2;
 		grid-row: 4;
 	}
-
 }
 
 @media (min-width: 770px) {
@@ -685,6 +675,11 @@ main {
 /*********************/
 /*   Onze producten  */
 /*********************/
+
+.home main section:nth-of-type(2) {
+	padding-left: 0;
+	padding-right: 0;
+}
 
 .home main section:nth-of-type(2) li {
 	background-color: var(--color-main);
@@ -740,6 +735,179 @@ main {
 	.home main section:nth-of-type(2) h2 {
 		text-align: center;
 		font-size: 2rem;
+	}
+}
+
+
+/************************/
+/*  Dopper laserstralen */
+/************************/
+
+.home main article:nth-of-type(3) {
+	background-color: var(--color-main);
+	min-height: 300px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 60px 1fr;
+	row-gap: 2.5em;
+}
+
+.home main article:nth-of-type(3) p, .home main article:nth-of-type(3) h2 {
+	color: var(--color-main2);
+}
+
+.home main article:nth-of-type(3) p {
+	grid-column-start: 1;
+	grid-row-start: 2;
+	max-width: 380px;
+}
+
+.home main article:nth-of-type(3) h2 {
+	margin-left: .5em;
+	margin-top: 1em;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 1;
+}
+
+.home main article:nth-of-type(3) img {
+	width: 120px;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	grid-column-start: 2;
+}
+
+.home main article:nth-of-type(3) div {
+	position: relative;
+	width: 120px;
+    grid-row-start: 1;
+	grid-row-end: 3;
+	grid-column-start: 2;
+}
+
+/*laserogen*/
+.home main article:nth-of-type(3) div span:first-of-type, .home main article:nth-of-type(3) div span:nth-of-type(2)  {
+	background-color: black;
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+}
+
+.home main article:nth-of-type(3) div span:first-of-type {
+	top: 60px;
+	right: 50px;
+}
+
+.home main article:nth-of-type(3) div span:nth-of-type(2) {
+	top: 60px;
+	right: 30px;
+}
+
+.home main article:nth-of-type(3) img.charge {
+	animation: schudden .1s cubic-bezier(.58,.23,.92,.23);
+	animation-iteration-count: 7;
+}
+
+@keyframes schudden {
+    0% { 
+		transform: translateX(0em); 
+	}
+
+	50% { 
+		transform: translateX(0.3em); 
+	}
+
+	75% { 
+		transform: translateX(0em); 
+	}
+
+	100% { 
+		transform: translateX(0.5em); 
+	}
+
+}
+
+.home main article:nth-of-type(3) div span.laserogen {
+	animation: vuur 1.2s ease-in;
+}
+
+@keyframes vuur {
+	0% {
+		background-color: black;
+	}
+
+	50% {
+		background-color: red;
+	}
+	
+	100% {
+		background-color: red;
+	}
+}
+
+/*laserstralen*/
+.home main article:nth-of-type(3) div span:nth-of-type(3), .home main article:nth-of-type(3) div span:nth-of-type(4) {
+	width: .1px;
+	height: 3px;
+	position: absolute;
+	top: 65px;
+	left: 83px;
+	z-index: 10;
+	rotate: 20deg;
+}
+
+.home main article:nth-of-type(3) div span:nth-of-type(4) {
+	left: 63px;
+}
+
+
+.home main article:nth-of-type(3) div span.laserstralen {
+	animation: schieten .7s ease-in;
+	animation-delay: .7s;
+	transform-origin: 0% 50%;
+}
+
+@keyframes schieten {
+	0% {
+		transform: scaleX(1);
+		background-color: red;
+	}
+
+	50% { 
+		transform: scaleX(1500);
+		background-color: red;
+	}
+
+	99% { 
+		background-color: red;
+	}
+
+	100% {
+		transform: scaleX(1);
+		background-color: black;
+	}
+}
+
+
+@media (min-width: 650px) {
+	.home main article:nth-of-type(3) {
+		grid-template-columns: 2fr 2fr 2fr 1fr;
+		row-gap: 1em;
+	}
+
+	.home main article:nth-of-type(3) h2 {
+			margin-left: .4em;
+			min-width: 400px;
+			font-size: 2rem;
+	}
+
+	.home main article:nth-of-type(3) h2, .home main article:nth-of-type(3) p {
+		grid-column-start: 2;
+	}
+
+	.home main article:nth-of-type(3) img, .home main article:nth-of-type(3) div {
+		grid-column-start: 3;
 	}
 }
 
@@ -937,7 +1105,7 @@ footer article:first-of-type {
 		max-width: 400px;
 	}
 
-	article h2 {
+	footer article:first-of-type h2 {
 		font-size: 2rem;
 	}
 }
@@ -1303,7 +1471,7 @@ footer p {
 
 .shop main section ul {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(9em, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
 	gap: 1em;
 	padding: 1em;
 }
@@ -1344,13 +1512,18 @@ footer p {
 	text-align: center;
 	min-width: 180px;
 	font-size: .85rem;
+	color: var(--color-main)
 }
 
 .shop main section ul li a:focus {
 	outline: none;
 }
 
-.prijs {
+.shop main section ul li ul li {
+	margin: -.5em;
+}
+
+.shop main section ul li ul li:last-of-type {
 	font-family: Gilroy, sans-serif;
 }
 

@@ -1,5 +1,5 @@
 // JavaScript Document
-console.log("hi");
+console.log("hi")
 
 
 // hamburgermenu icoon veranderen in een kruisje //
@@ -22,7 +22,7 @@ function openMenu() {
 
 const header = document.querySelector("header")
 
-var scrollTrigger = 60 
+var scrollTrigger = 50 
 
 window.addEventListener("scroll", veranderHeader)
 
@@ -34,7 +34,7 @@ function veranderHeader() {
   } else {
     header.classList.remove("background-header") 
   }
-};
+}
 
 //Bron: https://codepen.io/aubort/pen/LeBVzW. Ik snap de code zelf ook.//
 
@@ -51,7 +51,7 @@ plusBtn.addEventListener("click", dropDown)
 h3.addEventListener("click", dropDown)
 
 function dropDown() {
-  if(droppedDown == false) {
+  if(droppedDown === false) {
     plusBtn.src="images/min-btn.svg"
     dropdownMenu.classList.add("dropdown")
     droppedDown = true;
@@ -65,13 +65,37 @@ function dropDown() {
 
 
 
+
+//laserstralen uitprobeersel//
+
+var dopperfles = document.querySelector(".home main article:nth-of-type(3) img")
+var laseroog = document.querySelector(".home main article:nth-of-type(3) div span:first-of-type")
+var laseroog2 = document.querySelector(".home main article:nth-of-type(3) div span:nth-of-type(2)")
+var laserstraal = document.querySelector(".home main article:nth-of-type(3) div span:nth-of-type(3)")
+var laserstraal2 = document.querySelector(".home main article:nth-of-type(3) div span:nth-of-type(4)")
+
+//de eventlistener werkt maar 1x (weet niet waarom) dus heb ik maar toggle gebruikt, 
+//zodat je de pagina niet steeds hoeft te refreshen.
+
+document.addEventListener("keypress", function(event) {  // bron: https://stackoverflow.com/questions/62315327/how-to-detect-if-a-certain-key-is-being-pressed
+  if (event.key == "l") {
+    
+    laseroog.classList.toggle("laserogen")  
+    laseroog2.classList.toggle("laserogen")
+    laserstraal.classList.toggle("laserstralen")
+    laserstraal2.classList.toggle("laserstralen")
+    dopperfles.classList.toggle("charge")
+  }
+
+})
+
+
+
+
+
 //winkelmandje animatie//
 
 var cartBtn = document.querySelector("main section ul li button") 
-
-
-
-cartBtn.addEventListener("click", voegToeAanWinkelwagen);
 
 
 function voegToeAanWinkelwagen() {
@@ -79,18 +103,20 @@ function voegToeAanWinkelwagen() {
   console.log("added")
 
   let winkelwagenAantal = document.querySelector("header span")
-  let currentAmount = winkelwagenAantal.innerHTML;
+  let currentAmount = winkelwagenAantal.innerHTML
   /* dat is een string(tekst) - dus even omzetten naar een getal, want anders wordt het: 01 011 0111*/
-  currentAmount = parseInt(currentAmount);
+  currentAmount = parseInt(currentAmount)
 
   /* 1 bij het huisige aantal optellen */
-  let newAmount = currentAmount + 1;
+  let newAmount = currentAmount + 1
 
   /* tenslotte het nieuwe aantal in de HTML zetten */
-  winkelwagenAantal.innerHTML = newAmount;
+  winkelwagenAantal.innerHTML = newAmount
 
   /*class met animatie toevoegen*/
   winkelwagenAantal.classList.add("cart-animatie")
 
-  
 }
+
+cartBtn.addEventListener("click", voegToeAanWinkelwagen)
+
