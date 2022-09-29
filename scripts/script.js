@@ -92,7 +92,6 @@ document.addEventListener("keypress", function(event) {  // bron: https://stacko
 
 
 
-
 //winkelmandje animatie//
 
 var cartBtn = document.querySelector("main section ul li button") 

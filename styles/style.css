@@ -296,22 +296,22 @@ header img[alt="winkelmandje"] {
 
 header a span {
 	position: fixed;
-	right: 9em;
-	top: 2em;
+	right: 6.5em;
+	top: 1.2em;
 	padding: .5em;
-	background-color: var(--color-main);
 	border-radius: 50%;
-	font-size: .375em;
+	font-size: .5em;
 	text-align: center;
-	background-color: white;
+	background-color: var(--color-accent);
 	color: var(--color-main);
+	z-index: 11;
 }
 
 @media (min-width: 650px) {
 
 	header a span {
-		right: 7em;
-		top: 2em;
+		right: 5.5em;
+		top: 1.5em;
 	}
 }
 
@@ -321,15 +321,15 @@ header a span {
 
 @keyframes feedback {
 	0% {
-		padding: .5em;
+		transform: scale(1);
 	}
 
 	50% {
-		padding: 1.5em;
+		transform: scale(2.5);
 	}
 
 	100% {
-		padding: .5em;
+		transform: scale(1);
 	}
 }
 
@@ -812,6 +812,7 @@ main {
 @keyframes schudden {
     0% { 
 		transform: translateX(0em); 
+		filter: brightness(100%);
 	}
 
 	50% { 
@@ -824,6 +825,7 @@ main {
 
 	100% { 
 		transform: translateX(0.5em); 
+		filter: brightness(10%);
 	}
 
 }
@@ -1261,7 +1263,7 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-	color: var(--color-selection);
+	color: hotpink;
 	background-color: transparent;
 }
 
@@ -1421,7 +1423,7 @@ footer p {
 }
 
 .shop main nav a:hover {
-	color: var(--color-main);
+	color: hotpink;
 }
 
 .shop main nav a:focus {
