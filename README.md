@@ -294,7 +294,11 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
   <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Het gaat vrij goed, mijn site is bijna af. Afgelopen week heb ik...............
+  
+  Ik ben van plan om nog wat meer animaties toe te voegen en verder de puntjes op de i te zetten.
+  
+ 
 
 
   ### Agenda voor meeting
@@ -310,10 +314,8 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Geen <br> gebruiken
+  - :focus-within kan je op hamburger menu toepassen
 
 </details>
 
@@ -331,13 +333,16 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb veel geleerd deze weken. ...............
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
+  Ik vind het nog wel moeilijk om het mooi responsive te maken, zodat het op elke schermgrootte mooi blijft. Hetis wel aardig gelukt om
+  dit te doen, maar ik denk dat mijn manier misschien een beetje omslachtig is, aangezien ik ook veel met margins zit te schuiven.
+  Ik wil nog groeien in het bondiger maken van mijn code.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
@@ -350,7 +355,9 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
 
 <details open>
   
-  - Alle afbeeldingen en tekst zijn van www.dopper.nl
+  - Alle afbeeldingen en tekst zijn van www.dopper.nl,
+  behalve: foto plastic flesje: https://nl.pinterest.com/pin/597501075537331108/
+  
   - Alle iconen heb ik zelf met Adobe illustrator gemaakt
 
  
