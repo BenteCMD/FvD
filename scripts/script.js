@@ -63,28 +63,27 @@ function dropDown() {
 }
 
 
-
-
-
 //laserstralen uitprobeersel//
 
-var dopperfles = document.querySelector(".home main article:nth-of-type(3) img")
+var dopperfles = document.querySelector(".home main article:nth-of-type(3) img:first-of-type")
 var laseroog = document.querySelector(".home main article:nth-of-type(3) div span:first-of-type")
 var laseroog2 = document.querySelector(".home main article:nth-of-type(3) div span:nth-of-type(2)")
 var laserstraal = document.querySelector(".home main article:nth-of-type(3) div span:nth-of-type(3)")
 var laserstraal2 = document.querySelector(".home main article:nth-of-type(3) div span:nth-of-type(4)")
+var plasticfles = document.querySelector(".home main article:nth-of-type(3) img:last-of-type")
 
 //de eventlistener werkt maar 1x (weet niet waarom) dus heb ik maar toggle gebruikt, 
 //zodat je de pagina niet steeds hoeft te refreshen.
 
 document.addEventListener("keypress", function(event) {  // bron: https://stackoverflow.com/questions/62315327/how-to-detect-if-a-certain-key-is-being-pressed
-  if (event.key == "l") {
+  if (event.key === "l") {
     
     laseroog.classList.toggle("laserogen")  
     laseroog2.classList.toggle("laserogen")
     laserstraal.classList.toggle("laserstralen")
     laserstraal2.classList.toggle("laserstralen")
     dopperfles.classList.toggle("charge")
+    plasticfles.classList.toggle("attacked")
   }
 
 })
@@ -118,4 +117,3 @@ function voegToeAanWinkelwagen() {
 }
 
 cartBtn.addEventListener("click", voegToeAanWinkelwagen)
-

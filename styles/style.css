@@ -72,6 +72,7 @@ a {
 	text-decoration: none;
 }
 
+
 h2 {
 	color: var(--color-main);
 	font-family: var(--kop-text);
@@ -116,6 +117,7 @@ li {
 
 
 
+
 /*********************/
 /*  Header styling   */
 /*********************/
@@ -153,6 +155,12 @@ header + a {
 	}
 }
 
+header + a:active {
+	outline: none;
+	border: none;
+	
+} 
+
 header nav {
 	background-color: var(--color-main);
 
@@ -164,7 +172,17 @@ header nav {
 	z-index: 1;
 
 	transform: translateX(100%);
+}
 
+@media (max-width: 650px) {
+
+	header nav:focus-within {
+		transform: translateX(0);
+	}
+
+	a[href="#content"]:focus {
+		margin-left: 200px;
+	}
 }
 
 a[href="#content"] {
@@ -174,7 +192,8 @@ a[href="#content"] {
 }
 
 a[href="#content"]:focus {
-	transform: translateY(0%);
+	transform: translateX(-110%);
+	top: 15px;
 }
 
 header nav ul {
@@ -206,7 +225,7 @@ header nav ul li img:hover {
 
 header nav ul li:last-of-type a:focus {
 	transform: scale(1.2);
-	border: none;
+	outline: none;
 	border-bottom: 4px solid var(--color-accent);
 	padding-bottom: 2em;
 }
@@ -223,19 +242,19 @@ header nav li a {
 	text-align: left;
 }
 
-header nav li a:hover {
+header nav a:hover {
 	color: var(--color-accent);
 }
 
-header a:focus {
-	border: 4px solid var(--color-accent);
+header nav a:active { /* werkt niet? Outline gaat niet weg..*/
 	outline: none;
 }
 
-header nav li a:active {
-	color: var(--color-accent);
-	border: none;
+header nav a:focus {
+	outline: 5px solid var(--color-accent);
+	outline-offset: .5em;
 }
+
 
 .huidigepagina {
 	color: var(--color-accent);
@@ -300,6 +319,7 @@ header a span {
 	top: 1.2em;
 	padding: .5em;
 	border-radius: 50%;
+	font-family: "Gilroy", sans-serif;
 	font-size: .5em;
 	text-align: center;
 	background-color: var(--color-accent);
@@ -351,6 +371,11 @@ header button {
 	z-index: 10;
 	border: none;
 	background-color: transparent;
+}
+
+header button:focus {
+	outline: 5px solid var(--color-accent);
+  	outline-offset: .5em;
 }
 
 .line {
@@ -406,21 +431,21 @@ main {
 }
 
 .home main a:hover {
-	font-size: .8rem;
+	transform: scale(1.1);
 	box-shadow: 3px 6px 0 #333;
 	background-color: var(--color-selection);
-	border: 8px solid var(--color-accent);
+}
+
+.home main a:focus {
+	background-color: var(--color-selection);
+	outline: 5px solid var(--color-accent);
+  	outline-offset: .5em;
 }
 
 .home main a:active {
 	font-size: .8rem;
 	transform: translateY(4px);
 	box-shadow: none;
-}
-
-.home main a:focus {
-	background-color: var(--color-selection);
-	border: 8px solid var(--color-accent);
 	outline: none;
 }
 
@@ -470,19 +495,9 @@ main {
 
 .home main article:first-child a {
 	position: relative;
-	background-color: var(--color-accent);
-	padding: 1.5em;
-	border-radius: 100px;
-	text-transform: uppercase;
-	text-align: center;
-	font-size: .75rem;
-	text-decoration: none;
-	color: var(--color-main);
-	font-family: var(--link-text);
-	font-weight: 600;
-	margin: 1em;
 	top: 30px;
 }
+
 
 @media (min-width: 650px) {
 	.home main article:first-child {
@@ -504,17 +519,17 @@ main {
 	align-items: center;
 }
 
-.smaller {
-	max-width: 60em;
-	margin-inline: auto;
-}
-
 @media (min-width: 650px) {
 
 	.home main section:first-of-type {
 		margin-top: 45em;
 		min-height: 300px;
 	}
+}
+
+.smaller {
+	max-width: 60em;
+	margin-inline: auto;
 }
 
 .home main section:first-of-type h2 {
@@ -563,6 +578,16 @@ main {
 	height: 60px;
 }
 
+@media (min-width: 650px) {
+	.home main section:first-of-type ul li:nth-of-type(2) p {
+		margin-bottom: 3em;
+	}
+	
+	.home main section:first-of-type ul li:nth-of-type(3) p {
+		margin-bottom: 1em;
+	}
+}
+
 
 /*******************************/
 /*   Dopperformaten article    */
@@ -598,14 +623,14 @@ main {
 
 .home main article:nth-of-type(2) p:nth-of-type(2) {
 	margin-bottom: 1em;
-	grid-column-start: span 2;
+	grid-column-start: span 3;
 }
 
 .home main article:nth-of-type(2) h2 {
 	font-size: 1.8rem;
 	font-family: var(--kop-text);
 	line-height: 1em;
-	margin-bottom: 1em;
+	margin-bottom: .5em;
 	margin-top: 1em;
 	margin-left: .5em;
 	color: var(--color-main2);
@@ -619,17 +644,16 @@ main {
 @media (min-width: 650px) {
 	.home main article:nth-of-type(2) {
 		grid-template-columns: 1fr 2fr 2fr 1fr;
-		justify-items: start;
-		align-items: start;
-		min-height: 450px;
+		grid-template-rows: 100px 120px 90px 70px;
+		min-height: 400px;
 	}
 
 	.home main article:nth-of-type(2) img {
 		grid-column-start: 3;
 		grid-column-end: 3;
-		grid-row-start: 2;
-		grid-row: span 3;
-		width: 250px;
+		grid-row-start: 3;
+		grid-row: span 4;
+		width: 270px;
 	}
 
 	.home main article:nth-of-type(2) h2 {
@@ -637,15 +661,13 @@ main {
 		grid-column-start: 2;
 		margin-bottom: 1em;
 		min-width: 300px;
-		margin-bottom: 0;
-		margin-left: .7em;
+		margin-left: .3em;
 	}
 
 	.home main article:nth-of-type(2) p {
 		grid-column-start: 2;
 		grid-column-end: 2;
 		grid-row: 2;
-		margin: 0;
 		padding: 0;
 		min-width: 250px;
 	}
@@ -663,10 +685,20 @@ main {
 	}
 }
 
-@media (min-width: 770px) {
+@media (min-width: 1350px) {
+
+	.home main article:nth-of-type(2) {
+		grid-template-columns: 1fr 2fr 2fr 1fr;
+		grid-template-rows: 60px 100px 70px 50px;
+		min-height: 350px;
+	}
 
 	.home main article:nth-of-type(2) img {
 		width: 300px;
+	}
+
+	.home main article:nth-of-type(2) h2 {
+		margin-left: .5em;
 	}
 }
 
@@ -679,6 +711,7 @@ main {
 .home main section:nth-of-type(2) {
 	padding-left: 0;
 	padding-right: 0;
+	min-height: 950px;
 }
 
 .home main section:nth-of-type(2) li {
@@ -695,6 +728,13 @@ main {
 	margin-bottom: -60px;
 }
 
+@media (min-width: 390px) {
+	.home main section:nth-of-type(2) ul {
+		margin-inline: auto;
+		max-width: 335px;
+	}
+}
+
 
 .home main section:nth-of-type(2) li:nth-of-type(2) {
 	margin-left: 2em;
@@ -704,11 +744,12 @@ main {
 .home main section:nth-of-type(2) li img {
 	margin-top: 0px;
 	height: 255px;
-	max-width: 350px;
+	min-width: 300px;
 }
 
 .home main section:nth-of-type(2) h2 {
 	margin: .5em;
+	text-align: center;
 }
 
 .home main section:nth-of-type(2) h3 {
@@ -724,6 +765,11 @@ main {
 }
 
 @media (min-width: 650px) {
+
+	.home main section:nth-of-type(2) {
+		min-height: 500px;
+	}
+
 	.home main section:nth-of-type(2) ul {
 		display: flex;
 		flex-direction: row;
@@ -733,8 +779,15 @@ main {
 	}
 
 	.home main section:nth-of-type(2) h2 {
-		text-align: center;
 		font-size: 2rem;
+	}
+
+	.home main section:nth-of-type(2) li:first-of-type {
+		margin: 0;
+	}
+
+	.home main article:nth-of-type(3) img:last-of-type {
+		grid-column-start: 3;
 	}
 }
 
@@ -743,12 +796,13 @@ main {
 /*  Dopper laserstralen */
 /************************/
 
+/*styling en positionering van het artikel*/
 .home main article:nth-of-type(3) {
 	background-color: var(--color-main);
 	min-height: 300px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 60px 1fr;
+	grid-template-rows: 60px 30px 1fr;
 	row-gap: 2.5em;
 }
 
@@ -758,8 +812,11 @@ main {
 
 .home main article:nth-of-type(3) p {
 	grid-column-start: 1;
-	grid-row-start: 2;
 	max-width: 380px;
+}
+
+.home main article:nth-of-type(3) p:last-of-type {
+	margin-bottom: 2em;
 }
 
 .home main article:nth-of-type(3) h2 {
@@ -772,25 +829,79 @@ main {
 
 .home main article:nth-of-type(3) img {
 	width: 120px;
+	margin-top: 2em;
 	grid-row-start: 1;
 	grid-row-end: 3;
 	grid-column-start: 2;
 }
 
+.home main article:nth-of-type(3) img:last-of-type {
+	display: none;
+	width: 60px;
+	margin-left: auto;
+	grid-row-start: 2;
+}
+
 .home main article:nth-of-type(3) div {
 	position: relative;
+	margin-top: 2em;
 	width: 120px;
     grid-row-start: 1;
 	grid-row-end: 3;
 	grid-column-start: 2;
 }
 
+/*Artikel responsive maken*/
+@media (min-width: 650px) {
+	.home main article:nth-of-type(3) {
+		grid-template-columns: 1fr 2fr 1fr 3fr;
+		row-gap: 1em;
+		height: 350px;
+	}
+
+	.home main article:nth-of-type(3) h2 {
+			margin-left: .4em;
+			min-width: 400px;
+			font-size: 2rem;
+	}
+
+	.home main article:nth-of-type(3) h2, .home main article:nth-of-type(3) p {
+		grid-column-start: 2;
+	}
+
+	.home main article:nth-of-type(3) img, .home main article:nth-of-type(3) div {
+		grid-column-start: 3;
+	}
+
+	.home main article:nth-of-type(3) img:last-of-type {
+		width: 80px;
+		grid-row-start:2;
+		grid-row-end: 3;
+		grid-column-start: 4;
+		display: none;
+	}
+}
+
+@media (min-width: 1100px) {
+	.home main article:nth-of-type(3) {
+		grid-template-columns: 2fr 2fr 2fr 1fr;
+		row-gap: 1em;
+	}
+
+	.home main article:nth-of-type(3) img:last-of-type {
+		grid-column-start: 3;
+	}
+}
+
+
 /*laserogen*/
+
+/*styling en positionering van de laserogen*/
 .home main article:nth-of-type(3) div span:first-of-type, .home main article:nth-of-type(3) div span:nth-of-type(2)  {
 	background-color: black;
 	border-radius: 50%;
-	width: 15px;
-	height: 15px;
+	width: 12px;
+	height: 3px;
 	position: absolute;
 }
 
@@ -804,6 +915,27 @@ main {
 	right: 30px;
 }
 
+/*animatie laserogen worden rood*/
+.home main article:nth-of-type(3) div span.laserogen {
+	animation: vuur 1.2s ease-in;
+	height: 12px;
+}
+
+@keyframes vuur {
+	0% {
+		background-color: black;
+	}
+
+	50% {
+		background-color: red;
+	}
+	
+	100% {
+		background-color: red;
+	}
+}
+
+/*animatie dopperfles begint te schudden*/
 .home main article:nth-of-type(3) img.charge {
 	animation: schudden .1s cubic-bezier(.58,.23,.92,.23);
 	animation-iteration-count: 7;
@@ -830,25 +962,10 @@ main {
 
 }
 
-.home main article:nth-of-type(3) div span.laserogen {
-	animation: vuur 1.2s ease-in;
-}
-
-@keyframes vuur {
-	0% {
-		background-color: black;
-	}
-
-	50% {
-		background-color: red;
-	}
-	
-	100% {
-		background-color: red;
-	}
-}
 
 /*laserstralen*/
+
+/*styling en positionering van de stralen*/
 .home main article:nth-of-type(3) div span:nth-of-type(3), .home main article:nth-of-type(3) div span:nth-of-type(4) {
 	width: .1px;
 	height: 3px;
@@ -856,16 +973,41 @@ main {
 	top: 65px;
 	left: 83px;
 	z-index: 10;
-	rotate: 20deg;
+	rotate: 55deg;
 }
 
 .home main article:nth-of-type(3) div span:nth-of-type(4) {
 	left: 63px;
 }
 
+/*laserstralen responsive maken*/
+@media (min-width: 450px) {
+	.home main article:nth-of-type(3) div span:nth-of-type(3), .home main article:nth-of-type(3) div span:nth-of-type(4) {
+		rotate: 35deg;
+	}
+}
 
+@media (min-width: 550px) {
+	.home main article:nth-of-type(3) div span:nth-of-type(3), .home main article:nth-of-type(3) div span:nth-of-type(4) {
+		rotate: 30deg;
+	}
+}
+
+@media (min-width: 800px) {
+	.home main article:nth-of-type(3) div span:nth-of-type(3), .home main article:nth-of-type(3) div span:nth-of-type(4) {
+		rotate: 20deg;
+	}
+}
+
+@media (min-width: 1100px) {
+	.home main article:nth-of-type(3) div span:nth-of-type(3), .home main article:nth-of-type(3) div span:nth-of-type(4) {
+		rotate: 18deg;
+	}
+}
+
+/*animatie afvuren laserstralen*/
 .home main article:nth-of-type(3) div span.laserstralen {
-	animation: schieten .7s ease-in;
+	animation: schieten 1.3s ease-in;
 	animation-delay: .7s;
 	transform-origin: 0% 50%;
 }
@@ -891,25 +1033,23 @@ main {
 	}
 }
 
+/*animatie plasticflesje vernietigen*/
+.home main article:nth-of-type(3) img:last-of-type.attacked {
+	animation: shrink 1s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;  /*bron: https://stackoverflow.com/questions/9774829/css-animation-property-stays-after-animating*/
+	display: block;
+}
 
-@media (min-width: 650px) {
-	.home main article:nth-of-type(3) {
-		grid-template-columns: 2fr 2fr 2fr 1fr;
-		row-gap: 1em;
+@keyframes shrink {
+	0% {
+		transform: scaleY(1);
+		filter: brightness(100%);
 	}
 
-	.home main article:nth-of-type(3) h2 {
-			margin-left: .4em;
-			min-width: 400px;
-			font-size: 2rem;
-	}
-
-	.home main article:nth-of-type(3) h2, .home main article:nth-of-type(3) p {
-		grid-column-start: 2;
-	}
-
-	.home main article:nth-of-type(3) img, .home main article:nth-of-type(3) div {
-		grid-column-start: 3;
+	100% {
+		transform: scaleY(0);
+		filter: brightness(60%);
 	}
 }
 
@@ -945,20 +1085,23 @@ main {
 	max-width: 280px;
 }
 
-.home main section:nth-of-type(3) li a:hover {
-	box-shadow: none;
-	border: none;
-}
-
 .home main section:nth-of-type(3) li a:focus::before {
 	background-color: transparent;
-	border: 5px solid var(--color-accent);
+	outline: 5px solid var(--color-accent);
+  	outline-offset: .5em;
+}
+
+.home main section:nth-of-type(3) li a:focus {
+	outline: none;
+	border: none;
+	background-color: transparent;
 }
 
 .home main section:nth-of-type(3) li a:hover::before {
 	box-shadow: none;
 	background-color: transparent;
-	border: 5px solid var(--color-accent);
+	outline: 5px solid var(--color-accent);
+  	outline-offset: .5em;
 }
 
 .home main section:nth-of-type(3) h2 {
@@ -979,6 +1122,7 @@ main {
 
 .home main section:nth-of-type(3) p {
 	text-align: center;
+	margin: 0;
 }
 
 .home main section:nth-of-type(3) li a,
@@ -1006,6 +1150,7 @@ section:nth-of-type(3) li a {
 
 	.home main section:nth-of-type(3) h2 {
 		font-size: 2rem;
+		text-align: center;
 	}
 
 	.home main section:nth-of-type(3) img,
@@ -1041,7 +1186,7 @@ video {
 	min-width: 300px;
 }
 
-video+img {
+.home main article:last-of-type a, .home main article:last-of-type a img {
 	width: 100px;
 	height: 100px;
 	position: absolute;
@@ -1051,10 +1196,20 @@ video+img {
 	cursor: pointer;
 }
 
-video+img:hover {
+.home main article:last-of-type a img:hover {
 	width: 110px;
 	height: 110px;
 }
+
+.home main article:last-of-type a {
+	background-color: transparent;
+	transform: translate(-50%, -50%);
+} 
+
+.home main article:last-of-type a:hover {
+	outline: none;
+	box-shadow: none;
+} 
 
 
 
@@ -1077,7 +1232,7 @@ footer {
 		justify-content: center;
 	}
 
-	.nieuwsbrief-socials {
+	footer div {
 		display: flex;
 		gap: 1em;
 		align-items: center;
@@ -1229,6 +1384,7 @@ footer section h3 {
 	position: relative;
 	z-index: 1;
 	background-color: var(--color-main2);
+	cursor: pointer;
 }
 
 .dropdown {
@@ -1240,7 +1396,7 @@ footer section h3 {
 	/*https://tools.webdevpuneet.com/css-easing-generator*/
 }
 
-.h3-img {
+.plusjes {
 	display: flex;
 	align-items: center;
 }
@@ -1251,6 +1407,7 @@ footer section img {
 	position: absolute;
 	right: 1.5em;
 	z-index: 1;
+	cursor: pointer;
 }
 
 footer section ul li {
@@ -1322,6 +1479,10 @@ footer section div h3 {
 	footer section img {
 		display: none;
 	}
+
+	footer section h3 {
+		cursor: auto;
+	}
 }
 
 footer p {
@@ -1377,9 +1538,9 @@ footer p {
 
 
 
-/**********************/
-/*   2e pagina: shop  */
-/**********************/
+/****************************************************************************************************************************************/
+/*                                                           2e pagina: shop                                                                                                                    */
+/****************************************************************************************************************************************/
 
 
 /****************/
@@ -1427,13 +1588,14 @@ footer p {
 }
 
 .shop main nav a:focus {
-	border: 5px solid var(--color-accent);
-	outline: none;
+	outline: 5px solid var(--color-accent);
+  	outline-offset: .5em;
 	color: var(--color-main);
 }
 
 .shop main nav a:active {
-	border: none;
+	outline: none;
+	color: black;
 }
 
 @media (min-width: 570px) {
@@ -1503,10 +1665,10 @@ footer p {
 	transition: 1s;
 }
 
-.shop li:hover img {
+.shop li:hover img, 
+.shop li:focus img {
 	transform: scale(1.2) rotate(-10deg);
 	transition: .3s;
-
 }
 
 .shop main section ul li a {
@@ -1566,12 +1728,14 @@ footer p {
 
 .shop main button:hover {
 	background-color: var(--color-selection);
+	color: var(--color-main);
 }
 
 .shop main button:focus {
-	border: 5px solid var(--color-accent);
 	background-color: var(--color-selection);
-	outline: none;
+	outline: 5px solid var(--color-accent);
+  	outline-offset: .5em; 
+	color: var(--color-main);
 }
 
 #onzeflessen li button img,
