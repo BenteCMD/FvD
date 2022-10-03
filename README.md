@@ -285,15 +285,19 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
   <summary>Ik heb de afgelopen weken veel geleerd en ben vrij enthousiast geworden over front-end. CSS is nu wat tastbaarder voor mij geworden.</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  Eerste pagina:
+  <img src="readme-images/site_mobiel.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/site-middel.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/site_desktop.png" width="375px" alt="uitomst opdracht 1">
 
+  Tweede pagina:
+  <img src="readme-images/site_shop_mobiel.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/site_shop_groot.png" width="375px" alt="uitomst opdracht 1">
 
   ### Dit ging goed/Heb ik geleerd: 
   Ik heb veel geleerd deze weken. Wat ik vooral mee neem is de kennis om een website toegankelijk te maken d.m.v. semantsiche html te gebruiken en aria-labels en skiplinks toe te voegen.
   Ook weet ik nu ook een beetje hoe grid werkt en hoe je daar een website responsive mee kan maken, zonder al te veel media queries te hoeven gebruiken.
   Daarnaast begrijp ik nu beter hoe je animaties levendiger kan maken, door met de curve en timing van een animatie te spelen.
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
@@ -302,7 +306,6 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
   dit te doen, maar ik denk dat mijn manier misschien een beetje te omslachtig is, omdat ik ook veel met margins zit te schuiven.
   Ik wil nog groeien in het bondiger maken van mijn code.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
 
