@@ -285,12 +285,15 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
   <summary>Ik heb de afgelopen weken veel geleerd en ben vrij enthousiast geworden over front-end. CSS is nu wat tastbaarder voor mij geworden.</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
+  
   Eerste pagina:
+  
   <img src="readme-images/site_mobiel.png" width="156px"  alt="uitomst opdracht 1">
   <img src="readme-images/site-middel.png" width="375px" alt="uitomst opdracht 1">
   <img src="readme-images/site_desktop.png" width="375px" alt="uitomst opdracht 1">
 
   Tweede pagina:
+  
   <img src="readme-images/site_shop_mobiel.png" width="156px" alt="uitomst opdracht 1">
   <img src="readme-images/site_shop_groot.png" width="375px" alt="uitomst opdracht 1">
 
