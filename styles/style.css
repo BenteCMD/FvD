@@ -1715,7 +1715,7 @@ Ik begrijp de code zelf ook. */
 }
 
 .shop main section ul li:hover a::before,
-.shop main section ul li:focus a::before {
+.shop main section ul li a:focus::before {
 	background-color: var(--color-selection);
 	border-radius: 100%;
 	z-index: -1;
