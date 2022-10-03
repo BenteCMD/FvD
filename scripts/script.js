@@ -40,29 +40,6 @@ function veranderHeader() {
 
 
 
-//drop-down link menu in footer//
-
-const plusBtn = document.querySelector("footer section img");
-const h3 = document.querySelector("footer section h3")
-const dropdownMenu = document.querySelector("footer section ul")
-let droppedDown = false;
-
-plusBtn.addEventListener("click", dropDown)
-h3.addEventListener("click", dropDown)
-
-function dropDown() {
-  if(droppedDown === false) {
-    plusBtn.src="images/min-btn.svg"
-    dropdownMenu.classList.add("dropdown")
-    droppedDown = true;
-  } else {
-    plusBtn.src="images/plus-btn.svg"
-    dropdownMenu.classList.remove("dropdown")
-    droppedDown = false;
-  }
-}
-
-
 //laserstralen uitprobeersel//
 
 var dopperfles = document.querySelector(".home main article:nth-of-type(3) img:first-of-type")
@@ -90,10 +67,35 @@ document.addEventListener("keypress", function(event) {  // bron: https://stacko
 
 
 
+//drop-down link menu in footer//
+
+const plusBtn = document.querySelector("footer section img");
+const h3 = document.querySelector("footer section h3")
+const dropdownMenu = document.querySelector("footer section ul")
+let droppedDown = false;
+
+plusBtn.addEventListener("click", dropDown)
+h3.addEventListener("click", dropDown)
+
+function dropDown() {
+  if(droppedDown === false) {
+    plusBtn.src="images/min-btn.svg"
+    dropdownMenu.classList.add("dropdown")
+    droppedDown = true;
+  } else {
+    plusBtn.src="images/plus-btn.svg"
+    dropdownMenu.classList.remove("dropdown")
+    droppedDown = false;
+  }
+}
+
+
+
 //winkelmandje animatie//
 
 var cartBtn = document.querySelector(".shop main section ul li button") 
 var product = document.querySelector(".shop main section ul li img")
+
 
 function voegToeAanWinkelwagen() {
 
@@ -116,5 +118,6 @@ function voegToeAanWinkelwagen() {
   product.classList.add("product-toegevoegd")
 
 }
+
 
 cartBtn.addEventListener("click", voegToeAanWinkelwagen)

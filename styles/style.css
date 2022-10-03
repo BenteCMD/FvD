@@ -60,6 +60,13 @@ body {
 	overflow-x: hidden;
 }
 
+article, section {
+	padding-top: 1em;
+	padding-bottom: 3em;
+	padding-right: 1.5em;
+	padding-left: 1.5em;
+}
+
 img {
 	width: 100%;
 }
@@ -80,11 +87,6 @@ h3 {
 	font-family: var(--kop-text);
 }
 
-p, h2, h3 {
-	margin-left: 1em;
-	margin-right: 1em;
-}
-
 figcaption {
 	text-transform: uppercase;
 	padding: .3em;
@@ -99,6 +101,10 @@ li {
 	list-style: none;
 }
 
+.screenreader-only {
+	position: absolute;
+	left: -1000px;
+}
 
 
 /*********************/
@@ -122,8 +128,7 @@ img[alt="dopper logo"] {
 	margin-top: 1em;
 }
 
-img[alt="dopper logo"],
-header + a {
+img[alt="dopper logo"] {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -131,27 +136,26 @@ header + a {
 
 @media (min-width: 650px) {
 
-	img[alt="dopper logo"],
-	header + a {
+	img[alt="dopper logo"] {
 		transform: scale(.9);
 	}
 }
 
-header + a:active {
-	outline: none;
-	border: none;
-} 
 
 /*skip to content link*/
 a[href="#content"] {
 	position: absolute;
 	transform: translateY(-100%);
 	color: white;
+	background-color: var(--color-main);
+	padding: .5em;
+	z-index: 11;
 }
 
 a[href="#content"]:focus {
-	transform: translateX(-110%);
-	top: 15px;
+	position: fixed;
+	transform: translateX(0%);
+	top: 50px;
 }
 
 /*navigatie header uit beeld brengen voor klein scherm*/
@@ -190,6 +194,7 @@ header nav ul {
 	flex-direction: column;
 	align-items: flex-start;
 	gap: 1em;
+	margin-left: .5em;
 }
 
 header nav li a {
@@ -284,9 +289,9 @@ header a span {
 
 /*product laten vliegen naar winkelmandje, 
 werkt alleen op groot schermformaat, vond het niet nodig op klein schermformaat (en ik weet niet hoe ik het goed responsive moet maken)*/
-@media (min-width: 1000px) {
+@media (min-width: 1300px) {
 	.product-toegevoegd {
-		animation: vliegNaarWinkelwagen 1.5s;
+		animation: vliegNaarWinkelwagen .7s;
 		z-index: 11;
 	}
 
@@ -300,7 +305,7 @@ werkt alleen op groot schermformaat, vond het niet nodig op klein schermformaat 
 		}
 
 		100% { 
-			transform: translateY(-300px) translateX(1250px);
+			transform: translateY(-250px) translateX(1250px);
 			opacity: 0%;	
 		}
 			
@@ -425,7 +430,6 @@ main {
 	color: var(--color-main);
 	font-family: var(--link-text);
 	font-weight: 600;
-	margin: 1em;
 	transition: .3s;
 }
 
@@ -478,6 +482,7 @@ main {
 	position: relative;
 	top: 30px;
 	max-width: 20em;
+	margin-bottom: .5em;
 }
 
 @media (min-width: 650px) {
@@ -540,7 +545,7 @@ main {
 
 /*om de section feitjes te centeren op het scherm*/
 .smaller {
-	max-width: 60em;
+	max-width: 62em;
 	margin-inline: auto;
 }
 
@@ -550,6 +555,7 @@ main {
 	text-underline-offset: .3em;
 	color: var(--color-main);
 	margin-bottom: 1.5em;
+	margin-left: .3em;
 }
 
 .home main ul:first-of-type h3 {
@@ -615,8 +621,6 @@ main {
 	width: 300px;
 	height: 277px;
 	grid-column-start: span 2;
-	margin-top: 2.5em;
-	margin-left: 1em;
 }
 
 .home main article:nth-of-type(2) a {
@@ -641,7 +645,6 @@ main {
 	line-height: 1em;
 	margin-bottom: .5em;
 	margin-top: 1em;
-	margin-left: .5em;
 	color: var(--color-main2);
 	grid-column-start: span 2;
 }
@@ -653,9 +656,10 @@ main {
 @media (min-width: 650px) {
 	.home main article:nth-of-type(2) {
 		grid-template-columns: 1fr 2fr 2fr 1fr;
-		grid-template-rows: 100px 120px 90px 70px;
+		grid-template-rows: 60px 120px 90px 70px;
 		min-height: 400px;
 		row-gap: 1.5em;
+		column-gap: 1em;
 	}
 
 	.home main article:nth-of-type(2) img {
@@ -670,6 +674,7 @@ main {
 		grid-row: 1;
 		grid-column-start: 2;
 		min-width: 300px;
+		margin-top: 0em;
 	}
 
 	.home main article:nth-of-type(2) p {
@@ -678,6 +683,7 @@ main {
 		grid-row-start: 2;
 		padding: 0;
 		min-width: 300px;
+		max-width: 400px;
 	}
 
 	.home main article:nth-of-type(2) p:nth-of-type(2) {
@@ -690,24 +696,21 @@ main {
 		grid-column-start: 2;
 		grid-column-end: 2;
 		grid-row-start: 4;
+		margin-top: 2em;
+		margin-bottom: 2em;
 	}
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1300px) {
 
 	.home main article:nth-of-type(2) {
 		grid-template-columns: 1fr 2fr 2fr 1fr;
-		grid-template-rows: 60px 100px 70px 50px;
-		min-height: 370px;
-		row-gap: .5em;
+		grid-template-rows: 30px 100px 70px 50px;
+		min-height: 350px;
 	}
 
 	.home main article:nth-of-type(2) img {
 		width: 300px;
-	}
-
-	.home main article:nth-of-type(2) h2 {
-		margin-left: .5em;
 	}
 }
 
@@ -739,8 +742,8 @@ main {
 }
 
 .home main section:nth-of-type(2) li:nth-of-type(2) {
-	margin-left: 2em;
 	margin-top: 3em;
+	margin-left: 2em;
 }
 
 .home main section:nth-of-type(2) li img {
@@ -750,7 +753,7 @@ main {
 }
 
 .home main section:nth-of-type(2) h2 {
-	margin: .5em;
+	margin-bottom: .5em;
 	text-align: center;
 }
 
@@ -759,10 +762,12 @@ main {
 	margin-top: .5em;
 	margin-bottom: .5em;
 	min-width: 250px;
+	margin-left: 1em;
 }
 
 .home main section:nth-of-type(2) a {
 	margin-top: 0em;
+	margin-left: 1em;
 }
 
 @media (min-width: 390px) {
@@ -791,7 +796,6 @@ main {
 	}
 
 	.home main section:nth-of-type(2) li:first-of-type {
-		margin: 0;
 		min-height: 400px;
 	}
 }
@@ -807,7 +811,7 @@ main {
 	min-height: 300px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 60px 30px 1fr;
+	grid-template-rows: 30px 30px 60px;
 	row-gap: 2.5em;
 }
 
@@ -818,6 +822,7 @@ main {
 .home main article:nth-of-type(3) p {
 	grid-column-start: 1;
 	max-width: 380px;
+	min-width: 200px;
 }
 
 .home main article:nth-of-type(3) p:last-of-type {
@@ -825,8 +830,6 @@ main {
 }
 
 .home main article:nth-of-type(3) h2 {
-	margin-left: .5em;
-	margin-top: 1em;
 	grid-row-start: 1;
 	grid-row-end: 2;
 	grid-column-start: 1;
@@ -859,13 +862,12 @@ main {
 /*Artikel responsive maken*/
 @media (min-width: 650px) {
 	.home main article:nth-of-type(3) {
-		grid-template-columns: 1fr 2fr 1fr 3fr;
+		grid-template-columns: 1fr 2fr 1fr 1fr;
 		row-gap: 1em;
 		height: 350px;
 	}
 
 	.home main article:nth-of-type(3) h2 {
-		margin-left: .4em;
 		min-width: 400px;
 		font-size: 2rem;
 	}
@@ -880,8 +882,7 @@ main {
 
 	.home main article:nth-of-type(3) img:last-of-type {
 		width: 80px;
-		grid-row-start:2;
-		grid-row-end: 3;
+		grid-row-start: 3;
 		grid-column-start: 4;
 		display: none;
 	}
@@ -1072,7 +1073,7 @@ main {
 }
 
 .home main section:nth-of-type(3) ul {
-	margin-top: 1em;
+	margin-top: 2em;
 }
 
 .home main section:nth-of-type(3) li {
@@ -1128,7 +1129,7 @@ main {
 
 .home main section:nth-of-type(3) p {
 	text-align: center;
-	margin: 0;
+	margin-bottom: 1em;
 }
 
 .home main section:nth-of-type(3) li a {
@@ -1173,20 +1174,20 @@ main {
 video {
 	max-width: 100%;
 	margin-bottom: 1em;
-	margin-top: 1em;
 	min-height: 400px;
 	object-fit: cover;
 }
 
 .home main article:last-of-type {
 	position: relative;
+	padding: 0em;
 }
 
 .home main article:last-of-type h2 {
 	position: absolute;
 	top: 65%;
 	left: 50%;
-	transform: translateX(-55%);
+	transform: translateX(-48%);
 	color: white;
 	min-width: 300px;
 }
@@ -1223,9 +1224,11 @@ video {
 /**************/
 
 footer {
-	margin-top: 3em;
 	min-height: 650px;
 	margin-bottom: 5em;
+	max-width: 45em;
+	margin-inline: auto;
+	padding: 1em;
 }
 
 @media (min-width: 650px) {
@@ -1233,7 +1236,7 @@ footer {
 	footer {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		align-items: start;
 	}
 
 	footer div {
@@ -1252,12 +1255,8 @@ footer article:first-of-type {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	margin-top: 2em;
 }
 
-footer article:first-of-type h2 {
-	margin-left: .8em;
-}
 
 @media (min-width: 570px) {
 	footer article:first-of-type {
@@ -1269,19 +1268,13 @@ footer article:first-of-type h2 {
 	}
 }
 
-.screenreader-only {
-	position: absolute;
-	left: -1000px;
-}
-
 form {
 	display: flex;
 	flex-wrap: wrap;
+	min-width: 320px;
 }
 
 input {
-	margin-left: 24px;
-	margin-right: 24px;
 	width: 260px;
 	padding-bottom: .5em;
 	border: none;
@@ -1304,9 +1297,7 @@ input:focus {
 	outline: none;
 }
 
-
 label {
-	margin-left: 24px;
 	margin-bottom: 1.75em;
 	margin-top: 1em;
 }
@@ -1315,8 +1306,9 @@ footer button {
 	border: none;
 	background-color: var(--color-accent);
 	border-radius: 50%;
-	width: 40px;
-	height: 40px;
+	width: 35px;
+	height: 35px;
+	margin-left: 1em;
 }
 
 footer button:hover {
@@ -1339,7 +1331,6 @@ footer article {
 	gap: 2em;
 	justify-content: center;
 	margin-bottom: 5em;
-	margin-top: 5em;
 }
 
 footer a {
@@ -1359,7 +1350,6 @@ footer a:focus {
 }
 
 @media (min-width: 570px) {
-
 	footer article:nth-of-type(2) img,
 	footer article:nth-of-type(2) a {
 		width: 40px;
@@ -1373,6 +1363,13 @@ footer a:focus {
 /* Info dopper */
 /***************/
 
+footer section {
+	padding-bottom: 0;
+	padding-top: 0;
+	padding-left: .5em;
+	padding-right: .5em;
+}
+
 footer section ul {
 	margin-bottom: 1em;
 	z-index: 0;
@@ -1380,37 +1377,7 @@ footer section ul {
 	top: 0;
 	transform: translateY(-40%);
 	opacity: 0;
-	margin-left: 1.7em;
-}
-
-footer section h3 {
-	position: relative;
-	z-index: 1;
-	background-color: var(--color-main2);
-	cursor: pointer;
-}
-
-.dropdown {
-	position: static;
-	transform: translateY(0);
-	opacity: 1;
-	z-index: 1;
-	transition: all 500ms cubic-bezier(0.245, 0.270, 0.600, 1.430);
-	/*https://tools.webdevpuneet.com/css-easing-generator*/
-}
-
-.plusjes {
-	display: flex;
-	align-items: center;
-}
-
-footer section img {
-	max-width: 17px;
-	max-height: 17px;
-	position: absolute;
-	right: 1.5em;
-	z-index: 1;
-	cursor: pointer;
+	margin-left: 2em;
 }
 
 footer section ul li {
@@ -1434,17 +1401,39 @@ footer ul li a:focus {
 }
 
 footer section h3 {
+	background-color: var(--color-main2);
+	z-index: 1;
+	cursor: pointer;
 	font-size: 1rem;
 	font-family: "Gilroy light", sans-serif;
 	color: rgb(72, 72, 72);
-	flex-grow: 1;
 	padding: .75em;
-	position: relative;
-}
-
-footer section div h3 {
 	border-top: 0.01em solid gray;
 	border-bottom: 0.01em solid gray;
+	flex-grow: 1;
+}
+
+.dropdown {
+	position: static;
+	transform: translateY(0);
+	opacity: 1;
+	z-index: 1;
+	transition: all 500ms cubic-bezier(0.245, 0.270, 0.600, 1.430);
+	/*https://tools.webdevpuneet.com/css-easing-generator*/
+}
+
+.plusjes {
+	display: flex;
+	align-items: center;
+}
+
+footer section img {
+	max-width: 17px;
+	max-height: 17px;
+	position: absolute;
+	right: 2em;
+	z-index: 1;
+	cursor: pointer;
 }
 
 /*skiplinks footer*/
@@ -1460,13 +1449,11 @@ a[href="#contact"]:focus, a[href="#zakelijk"]:focus, a[href="#overdopper"]:focus
 	background-color: var(--color-accent);
 }
 
-
+/*geen dropdown menu meer bij groot scherm*/
 @media (min-width: 650px) {
-
 	footer section {
 		display: flex;
 		flex-wrap: nowrap;
-		margin-top: 2em;
 		margin-bottom: 1em;
 		gap: 4em;
 	}
@@ -1478,6 +1465,7 @@ a[href="#contact"]:focus, a[href="#zakelijk"]:focus, a[href="#overdopper"]:focus
 		transform: translateY(0);
 		opacity: 1;
 		max-width: 350px;
+		margin-left: .3em;
 	}
 
 	.section-inception {
@@ -1498,14 +1486,17 @@ a[href="#contact"]:focus, a[href="#zakelijk"]:focus, a[href="#overdopper"]:focus
 
 	footer section h3 {
 		cursor: auto;
+		margin-left: .3em;
+		padding: 0em;
 	}
 }
 
 footer p {
+	margin-top: 2em;
 	text-transform: uppercase;
 	font-size: .8rem;
 	text-align: center;
-	margin-top: 2em;
+	align-self: center;
 }
 
 
@@ -1514,43 +1505,56 @@ footer p {
 /*   Overig   */
 /**************/
 
-/* bron zigzag hoekjes: https://stackoverflow.com/questions/38352493/how-to-make-css-zig-zag-borders */
+/* bron zigzag hoekjes: https://stackoverflow.com/questions/38352493/how-to-make-css-zig-zag-borders
+Ik begrijp de code zelf ook. */
 
 .zigzag {
 	position: relative;
-	padding: 8px 8px 32px 8px;
 }
 
-.zigzag:after {
-	background: linear-gradient(-30deg, #ffffff 16px, transparent 0), linear-gradient(30deg, #ffffff 16px, transparent 0);
-	background-repeat: repeat-x;
-	background-size: 32px 32px;
-	content: " ";
-	display: block;
-	position: absolute;
+/*::after gebruik je om de kartelrantjes na de content van de section/article te zetten*/
+.zigzag::after {
+
+	/*::after moet content hebben, anders bestaat het niet*/
+	content: ""; 
+
+	/*positioneren t.o.v. de section/article */
+	position: absolute; 
+
+	/*kartelrandjes positioneren aan de onderkant van de section/article*/
 	bottom: 0px;
+
+	/*kartelrandjes positioneren aan de linkerkant van de section/article*/
 	left: 0px;
+	
+	/*kartelrandjes zijn gemaakt met linear-gradients. De linear-gradients vormen ieder een helft van de witte driehoek */
+	background-image: linear-gradient(-30deg, #ffffff 50%, transparent 0), linear-gradient(30deg, #ffffff 50%, transparent 0);
+
+	/*de driekhoekjes een grootte geven, zodat er meerdere driehoekjes ontstaan*/
+	background-size: 32px 32px;
+
+	/*breedte van de ::after. Driehoekjes worden over de volle breedte van de pagina*/
 	width: 100%;
+
+	/*hoogte van de ::after*/
 	height: 32px;
 }
 
 .zigzag-blauw {
 	position: relative;
-	padding: 8px 8px 32px 8px;
 }
 
-.zigzag-blauw:after {
-	background: linear-gradient(-30deg, var(--color-main) 16px, transparent 0), linear-gradient(30deg, var(--color-main) 16px, transparent 0);
-	background-repeat: repeat-x;
-	background-size: 32px 32px;
-	content: " ";
-	display: block;
+.zigzag-blauw::after {
+	content: "";
 	position: absolute;
 	bottom: 0px;
 	left: 0px;
+	background-image: linear-gradient(-30deg, var(--color-main) 50%, transparent 0), linear-gradient(30deg, var(--color-main) 50%, transparent 0);
+	background-size: 32px 32px;
 	width: 100%;
 	height: 32px;
-}
+} 
+
 
 
 
@@ -1563,20 +1567,17 @@ footer p {
 /*   Main shop  */
 /****************/
 
-#header-img {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+/*header afbeelding*/
+.shop main div {
 	background-image: url("../images/header-dopper2.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	position: absolute;
 	top: 0;
-	min-height: 400px;
 	left: 0;
 	right: 0;
+	min-height: 400px;
 }
 
 .shop main nav {
@@ -1624,16 +1625,14 @@ footer p {
 	}
 }
 
+
+
 /***************/
 /*  Producten  */
 /***************/
 
-.shop main section:first-of-type {
-	margin-top: 1em;
-}
-
 .shop main section {
-	margin-bottom: 3em;
+	margin-bottom: 2em;
 }
 
 .shop main section h2 {
@@ -1646,7 +1645,6 @@ footer p {
 	margin-top: .5em;
 	margin-bottom: 1em;
 }
-
 
 .shop main section ul {
 	display: grid;
@@ -1691,7 +1689,7 @@ footer p {
 	text-align: center;
 	min-width: 180px;
 	font-size: .85rem;
-	color: var(--color-main)
+	color: var(--color-main);
 }
 
 .shop main section ul li a:focus {
@@ -1710,13 +1708,14 @@ footer p {
 	position: absolute;
 	content: "";
 	top: 0;
-	bottom: 50px;
+	bottom: 55px;
 	left: 0;
 	right: 0;
+	cursor: pointer;
 }
 
-.shop main section ul li:hover a:before,
-.shop main section ul li a:focus:before {
+.shop main section ul li:hover a::before,
+.shop main section ul li:focus a::before {
 	background-color: var(--color-selection);
 	border-radius: 100%;
 	z-index: -1;
@@ -1773,6 +1772,7 @@ footer p {
 
 	.shop main section p {
 		font-size: 1.3rem;
+		margin-bottom: 3em;
 	}
 
 	.shop main section ul li a {
