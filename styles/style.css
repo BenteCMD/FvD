@@ -52,10 +52,6 @@ summary {
 	src: url("../fonts/Gilroy-Regular.woff2") format("woff2")
 }
 
-@font-face {
-	font-family: "Gilroy medium";
-	src: url("../fonts/Gilroy-Medium.woff2") format("woff2")
-}
 
 body {
 	color: var(--color-main);
@@ -72,7 +68,6 @@ a {
 	text-decoration: none;
 }
 
-
 h2 {
 	color: var(--color-main);
 	font-family: var(--kop-text);
@@ -85,20 +80,9 @@ h3 {
 	font-family: var(--kop-text);
 }
 
-p,
-h2,
-h3 {
+p, h2, h3 {
 	margin-left: 1em;
 	margin-right: 1em;
-}
-
-@media (min-width: 650px) {
-
-	p {
-		transform: scale(.9);
-		margin-left: -.5em;
-	}
-
 }
 
 figcaption {
@@ -117,7 +101,6 @@ li {
 
 
 
-
 /*********************/
 /*  Header styling   */
 /*********************/
@@ -127,8 +110,7 @@ header {
 	justify-content: center;
 	position: sticky;
 	top: 0;
-	z-index: 10;
-
+	z-index: 11;
 	border-bottom: .01em solid white;
 	min-height: 50px;
 }
@@ -158,33 +140,9 @@ header + a {
 header + a:active {
 	outline: none;
 	border: none;
-	
 } 
 
-header nav {
-	background-color: var(--color-main);
-
-	position: fixed;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	z-index: 1;
-
-	transform: translateX(100%);
-}
-
-@media (max-width: 650px) {
-
-	header nav:focus-within {
-		transform: translateX(0);
-	}
-
-	a[href="#content"]:focus {
-		margin-left: 200px;
-	}
-}
-
+/*skip to content link*/
 a[href="#content"] {
 	position: absolute;
 	transform: translateY(-100%);
@@ -196,6 +154,35 @@ a[href="#content"]:focus {
 	top: 15px;
 }
 
+/*navigatie header uit beeld brengen voor klein scherm*/
+header nav {
+	background-color: var(--color-main);
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+	transform: translateX(100%);
+}
+
+/*navigatie header in beeld brengen door op hamburgermenu te klikken*/
+nav.toonMenu {
+	transform: translateX(0);
+}
+
+/*navigatie header zichtbaar maken bij focus op klein scherm*/
+@media (max-width: 650px) {
+
+	header nav:focus-within {
+		transform: translateX(0);
+	}
+
+	a[href="#content"]:focus {
+		margin-left: 200px;
+	}
+}
+
 header nav ul {
 	margin-top: 4em;
 	padding: 1em;
@@ -205,37 +192,7 @@ header nav ul {
 	gap: 1em;
 }
 
-header nav ul li:last-of-type a {
-	width: 25px;
-	height: 25px;
-	position: absolute;
-}
-
-header nav ul li:last-child {
-	width: 25px;
-	height: 25px;
-	position: fixed;
-	right: 60px;
-	top: 10px;
-}
-
-header nav ul li img:hover {
-	transform: scale(1.2);
-}
-
-header nav ul li:last-of-type a:focus {
-	transform: scale(1.2);
-	outline: none;
-	border-bottom: 4px solid var(--color-accent);
-	padding-bottom: 2em;
-}
-
-nav.toonMenu {
-	transform: translateX(0);
-}
-
 header nav li a {
-	text-decoration: none;
 	color: var(--color-main2);
 	font-size: 1.7rem;
 	font-family: var(--kop-text);
@@ -255,11 +212,102 @@ header nav a:focus {
 	outline-offset: .5em;
 }
 
-
-.huidigepagina {
-	color: var(--color-accent);
+/*Winkelmandje in nav*/
+header nav ul li:last-child,
+header nav ul li:last-child a,
+header nav ul li:last-child img {
+	width: 25px;
+	height: 25px;
+	position: fixed;
+	right: 60px;
+	top: 10px;
 }
 
+/*Extra winkelmandje in header voor klein scherm*/
+header img[alt="winkelmandje"] {
+	width: 25px;
+	height: 25px;
+	position: fixed;
+	top: 12px;
+	right: 55px;
+}
+
+header nav ul li img:hover,
+header img[alt="winkelmandje"]:hover {
+	transform: scale(1.2);
+}
+
+header nav ul li:last-child a:focus {
+	outline: none;
+	border-bottom: 4px solid var(--color-accent);
+	padding-bottom: 1em;
+}
+
+@media (min-width: 650px) {
+	header nav ul li:last-child a:focus {
+		padding-bottom: 1.7em;
+	}	
+}
+
+/*Feedback aantal items in winkelmandje*/
+header a span {
+	position: fixed;
+	right: 6.5em;
+	top: 1.2em;
+	padding: .5em;
+	border-radius: 50%;
+	font-family: var(--kop-text);
+	font-size: .5em;
+	text-align: center;
+	background-color: var(--color-accent);
+	color: var(--color-main);
+	z-index: 11;
+}
+
+.cart-animatie {
+	animation: feedback 1.5s ease-in-out;
+}
+
+@keyframes feedback {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(2.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+/*product laten vliegen naar winkelmandje, 
+werkt alleen op groot schermformaat, vond het niet nodig op klein schermformaat (en ik weet niet hoe ik het goed responsive moet maken)*/
+@media (min-width: 1000px) {
+	.product-toegevoegd {
+		animation: vliegNaarWinkelwagen 1.5s;
+		z-index: 11;
+	}
+
+	@keyframes vliegNaarWinkelwagen {
+		0% { 
+			transform: translateX(0) translateY(0);
+		}
+
+		75% {
+			opacity: 100%;
+		}
+
+		100% { 
+			transform: translateY(-300px) translateX(1250px);
+			opacity: 0%;	
+		}
+			
+	}
+}
+
+/*Styling navigatie header voor groot scherm*/
 @media (min-width: 650px) {
 	header button {
 		display: none;
@@ -273,7 +321,7 @@ header nav a:focus {
 		position: static;
 		transform: none;
 		padding: 0;
-		background: none;
+		background-color: transparent;
 	}
 
 	header nav ul {
@@ -304,55 +352,12 @@ header nav a:focus {
 	}
 }
 
-
-header img[alt="winkelmandje"] {
-	width: 25px;
-	height: 25px;
-	position: fixed;
-	top: 12px;
-	right: 55px;
+/*kleur nav link om aan te geven op welke pagina je zit*/
+.huidigepagina {
+	color: var(--color-accent);
 }
 
-header a span {
-	position: fixed;
-	right: 6.5em;
-	top: 1.2em;
-	padding: .5em;
-	border-radius: 50%;
-	font-family: "Gilroy", sans-serif;
-	font-size: .5em;
-	text-align: center;
-	background-color: var(--color-accent);
-	color: var(--color-main);
-	z-index: 11;
-}
-
-@media (min-width: 650px) {
-
-	header a span {
-		right: 5.5em;
-		top: 1.5em;
-	}
-}
-
-.cart-animatie {
-	animation: feedback 1.5s ease-in-out;
-}
-
-@keyframes feedback {
-	0% {
-		transform: scale(1);
-	}
-
-	50% {
-		transform: scale(2.5);
-	}
-
-	100% {
-		transform: scale(1);
-	}
-}
-
+/*Header krijgt background wanneer je scrollt*/
 .background-header {
 	background-color: var(--color-main);
 	border-bottom: none;
@@ -380,11 +385,11 @@ header button:focus {
 
 .line {
 	z-index: 10;
-	background-color: #fff;
+	background-color: var(--color-main2);
 	display: block;
-	margin: 5px 0;
 	height: 3px;
 	width: 30px;
+	margin: 5px 0;
 	border-radius: 10px;
 	transition: all 0.1s ease-in;
 }
@@ -410,11 +415,6 @@ main {
 	margin-top: 2em;
 }
 
-.smaller {
-	max-width: 50em;
-	margin-inline: auto;
-}
-
 .home main a {
 	background-color: var(--color-accent);
 	padding: 1.5em;
@@ -422,7 +422,6 @@ main {
 	text-transform: uppercase;
 	text-align: center;
 	font-size: .75rem;
-	text-decoration: none;
 	color: var(--color-main);
 	font-family: var(--link-text);
 	font-weight: 600;
@@ -465,9 +464,9 @@ main {
 	background-position: center;
 	position: absolute;
 	top: 0;
-	min-height: 400px;
 	left: 0;
 	right: 0;
+	min-height: 400px;
 }
 
 .home main article:first-child h2 {
@@ -496,6 +495,22 @@ main {
 .home main article:first-child a {
 	position: relative;
 	top: 30px;
+	animation: groterWorden 1s ease-in-out;
+}
+
+/*Knop valt op wanneer je op de website komt*/
+@keyframes groterWorden {
+	0% {
+		transform: scale(0);
+	}
+
+	50% {
+		transform: scale(1.2);
+	}
+
+	100% {
+		transform: scale(1);
+	}
 }
 
 
@@ -511,12 +526,8 @@ main {
 /*********************/
 
 .home main section:first-of-type {
-	min-height: 600px;
 	margin-top: 23em;
-	display: flex;
-	flex-direction: column;
-	gap: 2.5em;
-	align-items: center;
+	min-height: 600px;
 }
 
 @media (min-width: 650px) {
@@ -527,6 +538,7 @@ main {
 	}
 }
 
+/*om de section feitjes te centeren op het scherm*/
 .smaller {
 	max-width: 60em;
 	margin-inline: auto;
@@ -538,7 +550,6 @@ main {
 	text-underline-offset: .3em;
 	color: var(--color-main);
 	margin-bottom: 1.5em;
-	margin-left: 0.5em;
 }
 
 .home main ul:first-of-type h3 {
@@ -546,8 +557,6 @@ main {
 	font-family: var(--kop-text);
 	font-size: 1.2rem;
 	line-height: 1.5em;
-	margin-right: 0;
-	max-height: 77px;
 	max-width: 110px;
 }
 
@@ -557,9 +566,10 @@ main {
 
 .home main section:first-of-type ul {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
 	gap: 3em;
 	margin-bottom: 2em;
+	margin-left: .5em;
 }
 
 .home main section:first-of-type ul li {
@@ -578,9 +588,9 @@ main {
 	height: 60px;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 560px) {
 	.home main section:first-of-type ul li:nth-of-type(2) p {
-		margin-bottom: 3em;
+		margin-bottom: 3.5em;
 	}
 	
 	.home main section:first-of-type ul li:nth-of-type(3) p {
@@ -602,9 +612,9 @@ main {
 }
 
 .home main article:nth-of-type(2) img {
-	grid-column-start: span 2;
 	width: 300px;
 	height: 277px;
+	grid-column-start: span 2;
 	margin-top: 2.5em;
 	margin-left: 1em;
 }
@@ -615,14 +625,13 @@ main {
 }
 
 .home main article:nth-of-type(2) p {
+	max-width: 450px;
 	margin-bottom: 1em;
 	color: var(--color-main2);
 	grid-column-start: span 2;
-	max-width: 450px;
 }
 
 .home main article:nth-of-type(2) p:nth-of-type(2) {
-	margin-bottom: 1em;
 	grid-column-start: span 3;
 }
 
@@ -646,6 +655,7 @@ main {
 		grid-template-columns: 1fr 2fr 2fr 1fr;
 		grid-template-rows: 100px 120px 90px 70px;
 		min-height: 400px;
+		row-gap: 1.5em;
 	}
 
 	.home main article:nth-of-type(2) img {
@@ -659,29 +669,27 @@ main {
 	.home main article:nth-of-type(2) h2 {
 		grid-row: 1;
 		grid-column-start: 2;
-		margin-bottom: 1em;
 		min-width: 300px;
-		margin-left: .3em;
 	}
 
 	.home main article:nth-of-type(2) p {
 		grid-column-start: 2;
 		grid-column-end: 2;
-		grid-row: 2;
+		grid-row-start: 2;
 		padding: 0;
-		min-width: 250px;
+		min-width: 300px;
 	}
 
 	.home main article:nth-of-type(2) p:nth-of-type(2) {
 		grid-column-start: 2;
 		grid-column-end: 2;
-		grid-row: 3;
+		grid-row-start: 3;
 	}
 
 	.home main article:nth-of-type(2) a {
 		grid-column-start: 2;
 		grid-column-end: 2;
-		grid-row: 4;
+		grid-row-start: 4;
 	}
 }
 
@@ -690,7 +698,8 @@ main {
 	.home main article:nth-of-type(2) {
 		grid-template-columns: 1fr 2fr 2fr 1fr;
 		grid-template-rows: 60px 100px 70px 50px;
-		min-height: 350px;
+		min-height: 370px;
+		row-gap: .5em;
 	}
 
 	.home main article:nth-of-type(2) img {
@@ -726,15 +735,8 @@ main {
 .home main section:nth-of-type(2) li:first-of-type {
 	margin-right: 25px;
 	margin-bottom: -60px;
+	min-height: 420px;
 }
-
-@media (min-width: 390px) {
-	.home main section:nth-of-type(2) ul {
-		margin-inline: auto;
-		max-width: 335px;
-	}
-}
-
 
 .home main section:nth-of-type(2) li:nth-of-type(2) {
 	margin-left: 2em;
@@ -760,8 +762,14 @@ main {
 }
 
 .home main section:nth-of-type(2) a {
-	margin: 26px;
 	margin-top: 0em;
+}
+
+@media (min-width: 390px) {
+	.home main section:nth-of-type(2) ul {
+		margin-inline: auto;
+		max-width: 335px;
+	}
 }
 
 @media (min-width: 650px) {
@@ -784,10 +792,7 @@ main {
 
 	.home main section:nth-of-type(2) li:first-of-type {
 		margin: 0;
-	}
-
-	.home main article:nth-of-type(3) img:last-of-type {
-		grid-column-start: 3;
+		min-height: 400px;
 	}
 }
 
@@ -860,9 +865,9 @@ main {
 	}
 
 	.home main article:nth-of-type(3) h2 {
-			margin-left: .4em;
-			min-width: 400px;
-			font-size: 2rem;
+		margin-left: .4em;
+		min-width: 400px;
+		font-size: 2rem;
 	}
 
 	.home main article:nth-of-type(3) h2, .home main article:nth-of-type(3) p {
@@ -1037,7 +1042,7 @@ main {
 .home main article:nth-of-type(3) img:last-of-type.attacked {
 	animation: shrink 1s;
 	animation-delay: 1s;
-	animation-fill-mode: forwards;  /*bron: https://stackoverflow.com/questions/9774829/css-animation-property-stays-after-animating*/
+	animation-fill-mode: forwards;  /*zo blijft het plasticflesje uit beeld nadat die vernietigd is. Bron: https://stackoverflow.com/questions/9774829/css-animation-property-stays-after-animating*/
 	display: block;
 }
 
@@ -1112,6 +1117,7 @@ main {
 .home main section:nth-of-type(3) li {
 	background-color: var(--color-main2);
 	min-height: 400px;
+	margin-bottom: 1em;
 }
 
 .home main section:nth-of-type(3) h3 {
@@ -1125,8 +1131,7 @@ main {
 	margin: 0;
 }
 
-.home main section:nth-of-type(3) li a,
-section:nth-of-type(3) li a {
+.home main section:nth-of-type(3) li a {
 	text-align: left;
 	max-height: 320px;
 	background-color: transparent;
@@ -1138,7 +1143,7 @@ section:nth-of-type(3) li a {
 	width: 280px;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 700px) {
 
 	.home main section:nth-of-type(3) ul {
 		display: flex;
@@ -1181,7 +1186,7 @@ video {
 	position: absolute;
 	top: 65%;
 	left: 50%;
-	transform: translateX(-60%);
+	transform: translateX(-55%);
 	color: white;
 	min-width: 300px;
 }
@@ -1229,20 +1234,13 @@ footer {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: center;
 	}
 
 	footer div {
 		display: flex;
 		gap: 1em;
 		align-items: center;
-		justify-content: center;
 	}
-}
-
-footer article a:focus {
-	background-color: var(--color-selection);
-	outline: none;
 }
 
 
@@ -1255,6 +1253,10 @@ footer article:first-of-type {
 	flex-direction: column;
 	flex-wrap: wrap;
 	margin-top: 2em;
+}
+
+footer article:first-of-type h2 {
+	margin-left: .8em;
 }
 
 @media (min-width: 570px) {
@@ -1353,6 +1355,7 @@ footer a:hover {
 
 footer a:focus {
 	background-color: var(--color-selection);
+	outline: none;
 }
 
 @media (min-width: 570px) {
@@ -1416,11 +1419,10 @@ footer section ul li {
 
 footer ul li a {
 	background-color: transparent;
-	text-decoration: none;
 }
 
 footer ul li a:hover {
-	color: hotpink;
+	color: darkgoldenrod;
 	background-color: transparent;
 }
 
@@ -1584,7 +1586,7 @@ footer p {
 }
 
 .shop main nav a:hover {
-	color: hotpink;
+	color: darkgoldenrod;
 }
 
 .shop main nav a:focus {
@@ -1599,7 +1601,6 @@ footer p {
 }
 
 @media (min-width: 570px) {
-
 	.shop main nav ul {
 		gap: 5em;
 	}

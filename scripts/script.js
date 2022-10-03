@@ -90,11 +90,10 @@ document.addEventListener("keypress", function(event) {  // bron: https://stacko
 
 
 
-
 //winkelmandje animatie//
 
-var cartBtn = document.querySelector("main section ul li button") 
-
+var cartBtn = document.querySelector(".shop main section ul li button") 
+var product = document.querySelector(".shop main section ul li img")
 
 function voegToeAanWinkelwagen() {
 
@@ -113,6 +112,8 @@ function voegToeAanWinkelwagen() {
 
   /*class met animatie toevoegen*/
   winkelwagenAantal.classList.add("cart-animatie")
+
+  product.classList.add("product-toegevoegd")
 
 }
 
