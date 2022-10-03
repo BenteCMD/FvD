@@ -138,11 +138,13 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
 ## Breakdownschets (week 1)
 
 <details>
-  <summary>uitwerken na afloop 2e werkgroep</summary>
+  <summary>Mijn breakdownschets.</summary>
 
-  ### de hele pagina: 
+  ### de hele eerste pagina: 
   <img src="readme-images/breakdown_homebreakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
-
+  
+   ### de hele tweede pagina: 
+   <img src="readme-images/breakdown_shopbreakdownschet.jpg" width="375px" alt="breakdown van de hele pagina">
 </details>
 
 
