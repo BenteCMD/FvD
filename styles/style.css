@@ -1447,6 +1447,20 @@ footer section div h3 {
 	border-bottom: 0.01em solid gray;
 }
 
+/*skiplinks footer*/
+a[href="#contact"], a[href="#zakelijk"], a[href="#overdopper"] {
+	position: absolute;
+	transform: translateX(-3000%);
+	color: blue;
+}
+
+a[href="#contact"]:focus, a[href="#zakelijk"]:focus, a[href="#overdopper"]:focus {
+	transform: translateX(0%);
+	position: static;
+	background-color: var(--color-accent);
+}
+
+
 @media (min-width: 650px) {
 
 	footer section {
