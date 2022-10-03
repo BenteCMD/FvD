@@ -304,7 +304,6 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
   Ik vind het nog wel moeilijk om het mooi responsive te maken, zodat het op elke schermgrootte mooi blijft. Het is wel aardig gelukt om
   dit te doen, maar ik denk dat mijn manier misschien een beetje te omslachtig is, omdat ik ook veel met margins zit te schuiven.
   Ik wil nog groeien in het bondiger maken van mijn code.
