@@ -144,7 +144,7 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
   <img src="readme-images/breakdown_homebreakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
   
    ### de hele tweede pagina: 
-   <img src="readme-images/breakdown_shopbreakdownschet.jpg" width="375px" alt="breakdown van de hele pagina">
+   <img src="readme-images/breakdown_shopbreakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
 </details>
 
 
