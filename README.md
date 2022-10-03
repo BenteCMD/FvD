@@ -13,8 +13,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Jij
 
 <details open>
-  <summary>Ik ben Bente, woon in Amsterdam en ben 22 jaar oud. Ik hou van muziek luisteren, longboarden en vrienden zien.
-  Het eerste jaar CMD vond ik erg leuk, met name de vormgevingsvakken. Internetstandaarden vond ik leuk, CSS/HTML ging mij redelijk goed af. Het vak inleiding programmeren vond ik uitdagend, maar leuk. Uitdagend omdat ik het nog lastig vind overzicht te creëeren in mijn code, maar wel leuk als het uiteindelijk lukte om het gewenste resultaat te krijgen. </summary>
+  <summary>Ik ben Bente, woon in Amsterdam en ben 22 jaar oud. Ik houd van muziek luisteren, longboarden en vrienden zien.
+  Het eerste jaar CMD vond ik erg leuk, met name de vormgevingsvakken. Internetstandaarden vond ik ook leuk, CSS/HTML ging mij redelijk goed af. Het vak inleiding programmeren was uitdagend voor mij, maar wel leuk. Uitdagend omdat ik het nog lastig vind overzicht te creëeren in mijn code, maar wel leuk als het uiteindelijk lukte om het gewenste resultaat te krijgen. </summary>
 
   ### Auteur:
  Bente van der Zeijden
@@ -77,12 +77,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken na test in 1e werkgroep</summary>
-In de les heb ik de toegankelijkheid van de Dopper site getest d.m.v. mij in te leven in verschillende beperkingen.
+  In de les heb ik de toegankelijkheid van de Dopper site getest door mij in te leven in verschillende beperkingen.
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
  Het was een vrij frustrerende ervaring om de screenreader te gebruiken. Een robotstem bleef maar alle inhoud op het scherm voorlezen, zonder dat ik er controle over had. Bij de Dopper site viel mij het volgende op:
  - Je moest eerst door alle navigatie tabben, voordat je bij de inhoud van de pagina terecht kwam. Er waren geen shortcut links, waardoor het lang duurde om de eerste pagina te lezen.
  - Tijdens het voorlezen van het submenu, hoorde ik alleen maar "koplink, koplink, koplink". De titel van de link werd niet genoemd.
@@ -93,6 +92,7 @@ In de les heb ik de toegankelijkheid van de Dopper site getest d.m.v. mij in te 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 - shortcut links toevoegen ("ga door naar inhoud")
 - kopjes goed coderen, altijd een duidelijke titel
+- images een alt geven
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
@@ -127,6 +127,7 @@ In de les heb ik de toegankelijkheid van de Dopper site getest d.m.v. mij in te 
 Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis) 
 - kleine letters moeilijk te lezen
 - kleurcontrast vermindert. Witte tekst op lichtblauwe vlakken moeilijk te lezen.
+
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 - kleurcontrast omhoog
 - groot lettertype
@@ -167,23 +168,12 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
   tussen sections en articles. Ook realiseer ik nu beter dat het van belang is om je HTML eerst goed op orde te hebben voordat
   je aan de CSS styling begint, scheelt heel wat tijd..
   
-  Ook heb ik geprobeerd mijn HTML toegankelijk te maken voor screen-readers. Dit gaf wel een uitdaging: ik wilde een hele article
+  Daarnaast heb ik geprobeerd mijn HTML toegankelijk te maken voor screen-readers. Dit gaf wel een uitdaging: ik wilde een hele article
   klikbaar maken, zonder dat de screen-reader de hele <a> inhoud voor zou lezen. Inmiddels weet ik dat ik daar ::before en position absolute voor kan gebruiken.
 
   <img src="readme-images/site-totnutoe.png" width="75px" alt="website tot nu toe">
-  
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
   - geen <.hr> gebruiken waar het niet hoort
   - ::before en position absolute gebruiken voor klikbaar veld 
@@ -204,19 +194,7 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
   ### Stand van zaken
   Mijn CSS bestaat nu uit vrij veel regels. Ik vond het daardoor wel lastig het overzicht te bewaren. Vandaag ging bijv. mijn site "stuk", doordat ik iets op de verkeerde plek had gezet, maar niet meer wist waar. Inmiddels heb ik het opgelost. Ik ben nu bezig mijn CSS overzichtelijker te maken door o.a. comments toe te voegen.
 
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
   - CSS overzichtelijker maken door o.a. comments toe te voegen
   - Bij het responsive maken goed letten op alle breakpoints
@@ -230,7 +208,7 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
 ## Toegankelijkheidstest 2/2 (week 4)
 
 <details>
-  <summary>uitwerken na test in 8e werkgroep</summary>
+  <summary>Deze werkgroep hebben we de toegankelijkheid van onze eigen websites getest.</summary>
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
@@ -243,8 +221,8 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
  - Hij leest de html voor afbeeldingen voor ipv. een alternatieve tekst
   
   In mijn site heb ik het volgende verbeterd:
-  - Ik heb gezorgd dat alle headings en linkjes een duidelijke arialabel hebben dat wordt voorgelezen
-  - Afbeeldingen hebben een duidelijke alt en afbeeldingen die niet essentieel zijn hebben een aria-hidden="true
+  - Ik heb de juiste semantiek toegpast voor de headings en linkjes, zodat die op logische volgorde worden voorgelezen.
+  - Afbeeldingen hebben een duidelijke alt en afbeeldingen die niet essentieel zijn hebben een aria-hidden="true"
   - Tekst wordt niet dubbel voorgelezen
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
@@ -257,7 +235,7 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
   - Wanneer je door het menu navigeert, blijft het submenu onzichtbaar
   
   In mijn site heb ik verbeterd:
-  - Ik heb de focus state een duidelijke dikke fel gele border gegeven
+  - Ik heb de focus state een duidelijke dikke felle gele border gegeven
   - Ik heb shortcuts toegevoegd, die je secties laat skippen.
 
 
@@ -266,8 +244,7 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
   - Moeilijk om op gewenste knop te drukken, knoppen zijn vrij klein.
   
   In mijn site heb ik verbeterd:
-  - In mijn site heb ik de klikvelden groot gemaakt.
-  Maar wel genoeg ruimte tussen de knoppen gehouden.
+  - In mijn site heb ik de klikvelden groot gemaakt, maar wel genoeg ruimte tussen de knoppen gehouden.
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
@@ -291,29 +268,12 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
 ## Voortgang 3 (week 4)
 
 <details>
-  <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
-  Het gaat vrij goed, mijn site is bijna af. Afgelopen week heb ik...............
-  
+  Het gaat vrij goed, mijn site is bijna af. Afgelopen week heb ik mijn site beter responsive gemaakt en alle states vormgegeven.
   Ik ben van plan om nog wat meer animaties toe te voegen en verder de puntjes op de i te zetten.
-  
- 
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
   - Geen <br> gebruiken
   - :focus-within kan je op hamburger menu toepassen
 
@@ -326,22 +286,24 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
 ## Eindgesprek (week 5)
 
 <details>
-  <summary>uitwerken voor eindgesprek</summary>
+  <summary>Ik heb de afgelopen weken veel geleerd en ben vrij enthousiast geworden over front-end. CSS is nu wat tastbaarder voor mij geworden.</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Ik heb veel geleerd deze weken. ...............
+  Ik heb veel geleerd deze weken. Wat ik vooral mee neem is de kennis om een website toegankelijk te maken d.m.v. semantsiche html te gebruiken en aria-labels en skiplinks toe te voegen.
+  Ook weet ik nu ook een beetje hoe grid werkt en hoe je daar een website responsive mee kan maken, zonder al te veel media queries te hoeven gebruiken.
+  Daarnaast begrijp ik nu beter hoe je animaties levendiger kan maken, door met de curve en timing van een animatie te spelen.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
-  Ik vind het nog wel moeilijk om het mooi responsive te maken, zodat het op elke schermgrootte mooi blijft. Hetis wel aardig gelukt om
-  dit te doen, maar ik denk dat mijn manier misschien een beetje omslachtig is, aangezien ik ook veel met margins zit te schuiven.
+  Ik vind het nog wel moeilijk om het mooi responsive te maken, zodat het op elke schermgrootte mooi blijft. Het is wel aardig gelukt om
+  dit te doen, maar ik denk dat mijn manier misschien een beetje te omslachtig is, omdat ik ook veel met margins zit te schuiven.
   Ik wil nog groeien in het bondiger maken van mijn code.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
