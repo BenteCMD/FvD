@@ -75,7 +75,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Toegankelijkheidstest 1/2 (week 1)
 
-<details>
+<details open>
   <summary>uitwerken na test in 1e werkgroep</summary>
   In de les heb ik de toegankelijkheid van de Dopper site getest door mij in te leven in verschillende beperkingen.
   ### Bevindingen
@@ -137,7 +137,7 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
 
 ## Breakdownschets (week 1)
 
-<details>
+<details open>
   <summary>Mijn breakdownschets.</summary>
 
   ### de hele eerste pagina: 
@@ -153,7 +153,7 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
 
 ## Voortgang 1 (week 2)
 
-<details>
+<details open>
   <summary>Week 1 en 2 gingen goed. De eerste pagina (van de mobiele verise) is bijna af. </summary>
 
   ### Stand van zaken
@@ -184,7 +184,7 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
 
 ## Voortgang 2 (week 3)
 
-<details>
+<details open>
   <summary>In week 2 heb ik mij vooral bezig gehouden met het responsive maken van mijn website. Voor klein schermformaat heb ik een hamburgermenu toegvoegd en verder heb ik gewerkt met grid om elementen in de secties goed te positioneren. Dit weekend wil ik meer animaties aan mijn website toevoegen.</summary>
 
   ### Stand van zaken
@@ -203,7 +203,7 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
 
 ## Toegankelijkheidstest 2/2 (week 4)
 
-<details>
+<details open>
   <summary>Deze werkgroep hebben we de toegankelijkheid van onze eigen websites getest.</summary>
 
   ### Bevindingen
@@ -263,7 +263,7 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
 
 ## Voortgang 3 (week 4)
 
-<details>
+<details open>
 
   ### Stand van zaken
   Het gaat vrij goed, mijn site is bijna af. Afgelopen week heb ik mijn site beter responsive gemaakt en alle states vormgegeven.
@@ -281,7 +281,7 @@ Vervolgens heb ik een bril opgedaan met vlekken in mijn zichtveld (diabetis)
 
 ## Eindgesprek (week 5)
 
-<details>
+<details open>
   <summary>Ik heb de afgelopen weken veel geleerd en ben vrij enthousiast geworden over front-end. CSS is nu wat tastbaarder voor mij geworden.</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
