@@ -145,7 +145,7 @@ img[alt="dopper logo"] {
 /*skip to content link*/
 a[href="#content"] {
 	position: absolute;
-	transform: translateY(-100%);
+	transform: translateY(-1000%);
 	color: white;
 	background-color: var(--color-main);
 	padding: .5em;
@@ -155,7 +155,7 @@ a[href="#content"] {
 a[href="#content"]:focus {
 	position: fixed;
 	transform: translateX(0%);
-	top: 50px;
+	top: 60px;
 }
 
 /*navigatie header uit beeld brengen voor klein scherm*/
@@ -850,7 +850,7 @@ main {
 	grid-row-start: 2;
 }
 
-.home main article:nth-of-type(3) div {
+.home main article:nth-of-type(3) img, .home main article:nth-of-type(3) div {
 	position: relative;
 	margin-top: 2em;
 	width: 120px;
@@ -903,6 +903,7 @@ main {
 /*laserogen*/
 
 /*styling en positionering van de laserogen*/
+
 .home main article:nth-of-type(3) div span:first-of-type, .home main article:nth-of-type(3) div span:nth-of-type(2)  {
 	background-color: black;
 	border-radius: 50%;
@@ -979,7 +980,9 @@ main {
 	top: 65px;
 	left: 83px;
 	z-index: 10;
-	rotate: 55deg;
+	rotate: 55deg; /*Ik weet dat het beter is om "transform: rotate()" te gebruiken. Alleen werkte dit maar niet. 
+	Ik heb geprobeerd om de span een block element te maken of de span in een div te veranderen, maar ook dat werkte niet. 
+	Dus puur voor de demonstratie van hoe het hoort te werken, gebruik ik even "rotate". */
 }
 
 .home main article:nth-of-type(3) div span:nth-of-type(4) {
